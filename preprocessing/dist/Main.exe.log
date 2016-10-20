@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "Main.py", line 1, in <module>
+  File "GUI.pyc", line 2, in <module>
+  File "gi\__init__.pyc", line 42, in <module>
+  File "gi\_gi.pyc", line 12, in <module>
+  File "gi\_gi.pyc", line 10, in __load
+ImportError: No module named _error
