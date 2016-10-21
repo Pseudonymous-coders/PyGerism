@@ -1,13 +1,15 @@
 import glob
 import re
 import time
+import threading 
+from time import sleep
 from difflib import SequenceMatcher
 
 
-startTime = time.time()
+startTime = float(time.time())
+
 def isSimilar(a, b):
     return SequenceMatcher(None, a, b).ratio()
-
 
 def getFiles(path):
     files = []
@@ -56,6 +58,57 @@ for i in range(len(rawEssays)):
                 essayInfo['sentences'].append(sentence)
     essays.append(essayInfo)
 
+def scan(chunker):
+    for chunky in chunker:
+        print "next"
+        for essay in essays:
+            copys = []
+            counter = 0
+            for chunkySentence in chunky['sentences']:
+                for essaySentence in essay['sentences']:
+                    if chunkySentence != essaySentence:
+                        if isSimilar(chunkySentence, essaySentence) > 0.7:
+                            counter += 1
+                            copys.append(chunkySentence)
+                            copys.append(essaySentence)
+            if counter >= 1:
+                print "Alert {} and {} copied".format(chunky['name'], essay['name'])
+                print copys[0]
+                print copys[1]
+
+#things = list(chunks(essays, 3))
+finals = [] 
+finals.append(essays[0:][::2])
+finals.append(essays[1:][::2])
+
+first = threading.Thread(target=scan, args=(finals[0],))
+second = threading.Thread(target=scan, args=(finals[1],))
+first.daemon = True
+second.daemon = True
+first.start()
+second.start()
+
+while True:
+    pass
+
+'''
+for chunk in finals:
+    threadThing = threading.Thread(target=scan, args=(chunk,))
+    threadThing.daemon = True
+    threadThing.start()
+
+print "TIME:::::: "+str(float(time.time()) - startTime)
+
+for i in range(len(essays)):
+    threadThing = threading.Thread(target=checkEssay, args=(essays[i],))
+    threadThing.setDaemon(True)
+    threadThing.start()
+
+print "TIME:::::: "+str(float(time.time()) - startTime)
+
+
+
+#
 for i in range(len(essays)):
     for n in range(len(essays)):
         counter = 0
@@ -73,4 +126,6 @@ for i in range(len(essays)):
                 print copycat[1]
 
             print "\n\n"
-print "TIME:::::: "+(time.time() - startTime)
+print "TIME:::::: "+str(float(time.time()) - startTime)
+'''
+
