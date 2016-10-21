@@ -5,7 +5,6 @@ import threading
 from time import sleep
 from difflib import SequenceMatcher
 
-
 startTime = float(time.time())
 
 def isSimilar(a, b):
@@ -58,9 +57,12 @@ for i in range(len(rawEssays)):
                 essayInfo['sentences'].append(sentence)
     essays.append(essayInfo)
 
+howMany = 0
 def scan(chunker):
+    global howMany
     for chunky in chunker:
-        print "next"
+        howMany += 1
+        print howMany
         for essay in essays:
             copys = []
             counter = 0
@@ -84,12 +86,8 @@ finals.append(essays[1:][::2])
 first = threading.Thread(target=scan, args=(finals[0],))
 second = threading.Thread(target=scan, args=(finals[1],))
 first.daemon = True
-second.daemon = True
 first.start()
 second.start()
-
-while True:
-    pass
 
 '''
 for chunk in finals:
