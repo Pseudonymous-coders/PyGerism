@@ -5,3 +5,8 @@ run_odt = False  # If you want to run/process odt files (if true, then it requir
 odt_kill_time = 60  # Seconds to kill each odt, if it takes too long to process
 min_yellow = 60
 min_red = 85
+
+# WINDOW OPTIONS
+win_width = 600
+win_height = 70
+win_theme = "clam"

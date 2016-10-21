@@ -1,10 +1,25 @@
 from threading import Thread
-from gi import require_version
+from Tkinter import *
+import tkMessageBox
+from tkFileDialog import askdirectory
+from os.path import expanduser
 
-require_version('Gtk', '3.0')
-from gi.repository import Gtk, GObject
+
+class MessageDialog:
+    def __init__(self, title, text):
+        self.title = title
+        self.text = text
+        self.run_func = None
+
+    def connect(self, function):
+        self.run_func = function
+
+    def show(self):
+        print tkMessageBox.showinfo(self.title, self.text).upper()
+        # self.run_func()
 
 
+'''
 class MessageDialog:
     def __init__(self, parent, title, text):
         self.message = Gtk.MessageDialog(parent=parent, title=title)
@@ -25,27 +40,33 @@ class MessageDialog:
 
     def destroy(self):
         self.message.destroy()
+'''
 
 
 class FileDialog:
-    def __init__(self, parent):
-        self.dialog = Gtk.FileChooserDialog("Please choose a folder", parent,
-                                            Gtk.FileChooserAction.SELECT_FOLDER, buttons=
-                                            (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-                                             Gtk.STOCK_OPEN, Gtk.ResponseType.OK))
-        self.path = None
+    def __init__(self):
+        pass
 
     def get_folder(self):
-        self.dialog.show_all()
-        response = self.dialog.run()
-        if response == Gtk.ResponseType.CANCEL:
-            print "User hit cancel"
-            self.dialog.destroy()
-            return [True, self.path]
-        self.path = self.dialog.get_filename()
-        print "User opened folder\nPath:", self.path
-        self.dialog.destroy()
-        return [False, self.path]
+        try:
+            Tk().withdraw()
+        except Exception:
+            # If any window appears there's no point in having it
+            print "Error removing all windows"
+
+        passed = True
+
+        homedir = expanduser("~")
+        filename = None
+        try:
+            filename = askdirectory(initialdir="/home/smerkous/Desktop/BaileyChecker/essays"
+                                    , title="Please select the parent folder with essays",
+                                    mustexist=True)
+            if filename is None or len(filename) == 0:
+                passed = False
+        except Exception:
+            passed = False
+        return [passed, filename]
 
 
 class ProgressBar:
@@ -68,7 +89,6 @@ class ProgressBar:
         self.win.add(self.box)
         self.win.set_title(title)
         self.win.set_icon_from_file("eye.ico")
-
 
     def set_cancel_text(self, text):
         self.first_step.set_label(text)

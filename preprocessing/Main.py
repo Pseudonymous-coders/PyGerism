@@ -1,24 +1,50 @@
 from threading import Thread
 from time import sleep
-from GUI import ProgressBar, MessageDialog, FileDialog
+from GUI import MessageDialog, FileDialog
 from pytexter import Docxer
-#from copyScape import makeReport
-from math import factorial
+from Configuration_Files.config import *
+from Tkinter import *
+import ttk
 
-def exit_app(na):
+
+def exit_app():
     gui.destroy()
-    message.destroy()
-    try:
-        use = str(na)[20]
-    except IndexError:
-        use = str(na)
-    print "Usable callback: %s" % use
+    Tk().withdraw()
+    print "Exiting BaileyChecker..."
     exit(0)
 
 
-gui = ProgressBar(800, 100, exit_app)
-dialog = FileDialog(gui.get_parent())
-message = MessageDialog(gui.get_parent(), "ERROR", "Couldn't load the requested folder")
+# Set up main window
+gui = Tk()
+gui.geometry("%dx%d" % (win_width, win_height))
+gui.title("BaileyChecker plagiarism analyzer")
+gui.protocol("WM_DELETE_WINDOW", exit_app)
+gui.wm_resizable(win_width, win_height)
+gui.style = ttk.Style()
+
+print "Available Tkinter themes: " + str(gui.style.theme_names())
+print "Using theme: " + win_theme
+
+gui.style.theme_use(win_theme)
+
+# Setup progress bar
+progress = ttk.Progressbar(gui, orient="horizontal", length=win_width, mode="determinate")
+progress.pack()
+progress["maximum"] = 100  # Obviously 100%
+progress["value"] = 0  # Start off at 0
+
+# Setup below text
+update_text = StringVar()
+text_label = ttk.Label(gui, textvariable=update_text)
+text_label.pack()
+update_text.set("0% : Starting...")
+
+# Cancel button
+cancel_button = ttk.Button(gui, text="Cancel", command=exit_app)
+cancel_button.pack()
+
+dialog = FileDialog()
+message = MessageDialog("ERROR", "Couldn't load the requested folder")
 
 doc = Docxer()
 path = None
@@ -30,8 +56,33 @@ def slow_move(move):
         sleep(0.8)
 
 
-def on_start_app():
+def set_progress(current_progress, text):
+    global gui, progress, update_text
+    progress["value"] = current_progress
+    update_text.set("%d%% : %s" % (current_progress, text))
+
+
+def on_start_app(run_type):
     global path
+
+    if not run_type[0]:
+        message.show()
+        exit(1)
+
+    raw_folder = run_type[1]
+    folder_use = raw_folder + ("/" if raw_folder[-1] != "/" else "")
+    set_progress(0, "Folder selected: " + folder_use)
+    files = doc.get_folder(folder_use)
+
+    print "Using folder: " + str(folder_use)
+
+    new_folder = folder_use + "Examined/"
+    doc.run_files(folder_use, files, new_folder, set_progress)
+    processed_files = doc.get_folder(new_folder)
+
+    set_progress(10, "Done converting all essays into %s" % new_folder)
+
+    '''
     print "Analyzer Started\n\n"
     gui.set_percent(0)
     gui.set_text("Reading and Converting the files")
@@ -57,12 +108,26 @@ def on_start_app():
     gui.set_text("Done!!!")
     gui.set_cancel_text("DONE")
     print "Finished all of the examinations"
+    '''
 
 
 if __name__ == "__main__":
-    folder_use = "/root/SCAN/"
-    files = doc.get_folder(folder_use)
-    doc.run_files(folder_use, files, folder_use + "/Examined/")
+    print "Welcome to pyscape a python program to detect plagiarism in Essays" \
+          "\nDeveloped by: David Smerkous and Eli Smith" \
+          "\nFor Bailey and his naughty students"
+
+    run_type = dialog.get_folder()
+
+    main_app = Thread(target=on_start_app, args=(run_type,))
+    main_app.setDaemon(True)
+    main_app.start()
+
+    # exit(0)
+    # folder_use = "/home/smerkous/Desktop/BaileyChecker/essays"
+    # folder_use += ("/" if folder_use[-1] != "/" else "")
+
+    gui.mainloop()
+
     '''
     dialog_response, path = dialog.get_folder()
     if dialog_response:

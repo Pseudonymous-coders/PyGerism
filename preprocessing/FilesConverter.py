@@ -61,7 +61,7 @@ def odt_get_text(path):
         print "Output set to .txt\nConverting..."
         browser.find_by_xpath('//input[@type="submit" and @value="Convert"]').first.click()
         print "Converted page"
-    except (WindowsError, Exception):
+    except Exception:
         print "error"
         check_add()
         print "Selecting output"
@@ -87,7 +87,7 @@ def odt_get_text(path):
             if kill:
                 print "ODT took too long"
                 return text
-    except (WindowsError, Exception):
+    except Exception:
         print "error"
         check_add()
         print "Finding download link (First page)"
@@ -121,7 +121,7 @@ def odt_get_text(path):
             if kill:
                 print "ODT took too long"
                 return text
-    except (WindowsError, Exception):
+    except Exception:
         print "error"
         check_add()
         element = browser.find_by_xpath('//a')
@@ -136,6 +136,5 @@ def odt_get_text(path):
             if kill:
                 print "ODT took too long"
                 return text
-    bro
     print "Done converting"
     return text

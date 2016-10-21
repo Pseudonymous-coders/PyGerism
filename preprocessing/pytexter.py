@@ -14,9 +14,11 @@ from pdfminer.pdfparser import PDFSyntaxError
 from FilesConverter import odt_get_text
 from Configuration_Files import config
 
+
 class Docxer:
     def __init__(self):
         self.name = ""
+        self.prog_set = None
 
     @staticmethod
     def get_folder(path):
@@ -28,29 +30,41 @@ class Docxer:
             print "ERROR: " + str(err)
             return [""]
 
-    def run_files(self, dirs, ready_files, output=""):
-        sleep(1)
+    def set_progress(self, toset, text):
+        if self.prog_set is not None:
+            self.prog_set(toset, text)
+
+    def run_files(self, dirs, ready_files, output="", set_progress=None):
         if exists(output):
             try:
                 rmtree(output)
             except Exception as err:
                 print "Unable to access folder"
                 exit(0)
-        sleep(1)
         try:
             mkdir(output)
         except Exception as err:
-            sleep(1)
+            sleep(0.5)
             mkdir(output)
+
+        self.prog_set = set_progress
+
+        self.set_progress(1, "Loading files...")
+
+        total_size = len(ready_files)
+        current_size = 0
+        max_percent = 10
+
         for filer in ready_files:
             extension = splitext(dirs + filer)[1]
             print "\r\rConverting: %s to" % filer,
             if "docx" in extension and config.run_docx:
                 try:
                     to_write = str(self.process_doxc(dirs + filer).encode('ascii', 'ignore'))
-                except (IOError, Exception):
+                except (IOError, Exception) as err:
                     to_write = "N?A"
                     print "Couldn't read DOCX: " + filer
+                    print "ERROR: " + str(err)
             elif "pdf" in extension and config.run_pdf:
                 try:
                     to_write = str(self.process_pdf(dirs + filer))
@@ -85,7 +99,12 @@ class Docxer:
                 new_file.close()
             except Exception as err:
                 print "Error writing the file"
-        sleep(1)
+            current_size += 1
+
+            current_percent = float(max_percent) * (float(current_size) / float(total_size))
+
+            self.set_progress(int(current_percent), "Converting file %d of %d" % (current_size, total_size))
+
         print "Done..."
 
     @staticmethod
