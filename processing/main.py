@@ -1,5 +1,13 @@
 import glob
 import re
+import time
+from difflib import SequenceMatcher
+
+
+startTime = time.time()
+def isSimilar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+
 
 def getFiles(path):
     files = []
@@ -39,21 +47,30 @@ for i in range(len(rawEssays)):
         if len(paragraph.split(" ")) > 20:
             tempParagraphs.append(paragraph)
     for paragraph in tempParagraphs:
-        rawSentences = re.split('. |? |! +',paragraph)
+        rawSentences = re.split('\. |\? |! ',paragraph)
         tempsentences = []
         for sentence in rawSentences:
-            if len(sentence) > 5:
+            sentence = sentence.strip()
+            words = int(len(sentence.split(" ")))
+            if words > 5:
                 essayInfo['sentences'].append(sentence)
     essays.append(essayInfo)
 
 for i in range(len(essays)):
     for n in range(len(essays)):
         counter = 0
+        copycats = []
         if n != i:
             for isentence in essays[i]['sentences']:
                 for nsentence in essays[n]['sentences']:
-                    if isentence == nsentence:
+                    if isSimilar(isentence, nsentence) > 0.6:
                         counter += 1
-                        print isentence+"\n\n"
+                        copycats.append([isentence,nsentence])
         if counter >= 1:
-            print "Alert!! {} and {} are flagged {} times".format(essays[i]['name'], essays[n]['name'], counter)
+            print "Alert!! {} and {} are flagged {} times, here are the setences:".format(essays[i]['name'], essays[n]['name'], counter)
+            for copycat in copycats:
+                print copycat[0]
+                print copycat[1]
+
+            print "\n\n"
+print "TIME:::::: "+(time.time() - startTime)
