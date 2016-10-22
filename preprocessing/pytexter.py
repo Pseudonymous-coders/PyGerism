@@ -12,7 +12,7 @@ from pdfminer.pdfpage import PDFPage
 from cStringIO import StringIO
 from pdfminer.pdfparser import PDFSyntaxError
 from FilesConverter import odt_get_text
-from Configuration_Files import config
+from Configuration_Files.config import Configurator
 
 
 class Docxer:
@@ -58,20 +58,20 @@ class Docxer:
         for filer in ready_files:
             extension = splitext(dirs + filer)[1]
             print "\r\rConverting: %s to" % filer,
-            if "docx" in extension and config.run_docx:
+            if "docx" in extension and Configurator.RUN_DOCX:
                 try:
                     to_write = str(self.process_doxc(dirs + filer).encode('ascii', 'ignore'))
                 except (IOError, Exception) as err:
                     to_write = "N?A"
                     print "Couldn't read DOCX: " + filer
                     print "ERROR: " + str(err)
-            elif "pdf" in extension and config.run_pdf:
+            elif "pdf" in extension and Configurator.RUN_PDF:
                 try:
                     to_write = str(self.process_pdf(dirs + filer))
                 except (PDFSyntaxError, Exception):
                     to_write = "N?A"
                     print "Couldn't read PDF: " + filer
-            elif "odt" in extension and config.run_odt:
+            elif "odt" in extension and Configurator.RUN_ODT:
                 try:
                     to_write = str(odt_get_text(dirs + filer).encode('ascii', 'ignore'))
                 except (IOError, Exception):

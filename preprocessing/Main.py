@@ -2,7 +2,7 @@ from threading import Thread
 from time import sleep
 from GUI import MessageDialog, FileDialog
 from pytexter import Docxer
-from Configuration_Files.config import *
+from Configuration_Files.config import Configurator
 from Tkinter import *
 import ttk
 
@@ -13,22 +13,23 @@ def exit_app():
     print "Exiting BaileyChecker..."
     exit(0)
 
+Configurator.load_config()
 
 # Set up main window
 gui = Tk()
-gui.geometry("%dx%d" % (win_width, win_height))
+gui.geometry("%dx%d" % (Configurator.WIN_WIDTH, Configurator.WIN_HEIGHT))
 gui.title("BaileyChecker plagiarism analyzer")
 gui.protocol("WM_DELETE_WINDOW", exit_app)
-gui.wm_resizable(win_width, win_height)
+gui.wm_resizable(Configurator.WIN_WIDTH, Configurator.WIN_HEIGHT)
 gui.style = ttk.Style()
 
 print "Available Tkinter themes: " + str(gui.style.theme_names())
-print "Using theme: " + win_theme
+print "Using theme: " + Configurator.WIN_THEME
 
-gui.style.theme_use(win_theme)
+gui.style.theme_use(Configurator.WIN_THEME)
 
 # Setup progress bar
-progress = ttk.Progressbar(gui, orient="horizontal", length=win_width, mode="determinate")
+progress = ttk.Progressbar(gui, orient="horizontal", length=Configurator.WIN_WIDTH, mode="determinate")
 progress.pack()
 progress["maximum"] = 100  # Obviously 100%
 progress["value"] = 0  # Start off at 0
