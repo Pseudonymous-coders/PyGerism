@@ -1,13 +1,25 @@
 import glob
 import re
 import time
-from difflib import SequenceMatcher
+from time import sleep
+from Levenshtein import ratio
+#from difflib import SequenceMatcher
 
+startTime = float(time.time())
 
-startTime = time.time()
 def isSimilar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
+    return ratio(a,b)
+    #return SequenceMatcher(None, a, b).ratio()
 
+def median(lst):
+    sortedLst = sorted(lst)
+    lstLen = len(lst)
+    index = (lstLen - 1) // 2
+
+    if (lstLen % 2):
+        return sortedLst[index]
+    else:
+        return (sortedLst[index] + sortedLst[index + 1])/2.0
 
 def getFiles(path):
     files = []
@@ -56,7 +68,50 @@ for i in range(len(rawEssays)):
                 essayInfo['sentences'].append(sentence)
     essays.append(essayInfo)
 
-for i in range(len(essays)):
+howMany = 0
+perc = 0.0
+
+def scan(chunker):
+    global howMany
+    for chunky in chunker:
+        howMany += 1
+        perc = float(float(howMany) / float(len(chunker)))
+        print perc
+        for essay in essays:
+            copys = []
+            counter = 0
+            for chunkySentence in chunky['sentences']:
+                for essaySentence in essay['sentences']:
+                    if chunkySentence != essaySentence:
+                        if isSimilar(chunkySentence, essaySentence) > 0.7:
+                            essays[howMany-1]['counts'] = counter
+                            essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
+                            counter += 1
+                            copys.append(chunkySentence)
+                            copys.append(essaySentence)
+
+
+looper = essays
+scan(looper)
+
+counts = []
+
+for essay in looper:
+    if "counts" in essay:
+        counts.append(float(essay['counts']))
+countMed = median(counts)
+
+print countMed
+open('temp.txt', 'w').close()
+
+f = open('temp.txt', 'w')
+f.write
+f.write(":::RED:::")
+f.close()
+
+
+print "TIME:::::: "+str(float(time.time()) - startTime)
+"""for i in range(len(essays)):
     for n in range(len(essays)):
         counter = 0
         copycats = []
@@ -73,4 +128,4 @@ for i in range(len(essays)):
                 print copycat[1]
 
             print "\n\n"
-print "TIME:::::: "+(time.time() - startTime)
+"""
