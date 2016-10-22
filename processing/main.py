@@ -1,14 +1,25 @@
 import glob
 import re
 import time
-import threading 
 from time import sleep
-from difflib import SequenceMatcher
+from Levenshtein import ratio
+#from difflib import SequenceMatcher
 
 startTime = float(time.time())
 
 def isSimilar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
+    return ratio(a,b)
+    #return SequenceMatcher(None, a, b).ratio()
+
+def median(lst):
+    sortedLst = sorted(lst)
+    lstLen = len(lst)
+    index = (lstLen - 1) // 2
+
+    if (lstLen % 2):
+        return sortedLst[index]
+    else:
+        return (sortedLst[index] + sortedLst[index + 1])/2.0
 
 def getFiles(path):
     files = []
@@ -58,11 +69,14 @@ for i in range(len(rawEssays)):
     essays.append(essayInfo)
 
 howMany = 0
+perc = 0.0
+
 def scan(chunker):
     global howMany
     for chunky in chunker:
         howMany += 1
-        print howMany
+        perc = float(float(howMany) / float(len(chunker)))
+        print perc
         for essay in essays:
             copys = []
             counter = 0
@@ -70,44 +84,34 @@ def scan(chunker):
                 for essaySentence in essay['sentences']:
                     if chunkySentence != essaySentence:
                         if isSimilar(chunkySentence, essaySentence) > 0.7:
+                            essays[howMany-1]['counts'] = counter
+                            essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
                             counter += 1
                             copys.append(chunkySentence)
                             copys.append(essaySentence)
-            if counter >= 1:
-                print "Alert {} and {} copied".format(chunky['name'], essay['name'])
-                print copys[0]
-                print copys[1]
 
-#things = list(chunks(essays, 3))
-finals = [] 
-finals.append(essays[0:][::2])
-finals.append(essays[1:][::2])
 
-first = threading.Thread(target=scan, args=(finals[0],))
-second = threading.Thread(target=scan, args=(finals[1],))
-first.daemon = True
-first.start()
-second.start()
+looper = essays
+scan(looper)
 
-'''
-for chunk in finals:
-    threadThing = threading.Thread(target=scan, args=(chunk,))
-    threadThing.daemon = True
-    threadThing.start()
+counts = []
+
+for essay in looper:
+    if "counts" in essay:
+        counts.append(float(essay['counts']))
+countMed = median(counts)
+
+print countMed
+open('temp.txt', 'w').close()
+
+f = open('temp.txt', 'w')
+f.write
+f.write(":::RED:::")
+f.close()
+
 
 print "TIME:::::: "+str(float(time.time()) - startTime)
-
-for i in range(len(essays)):
-    threadThing = threading.Thread(target=checkEssay, args=(essays[i],))
-    threadThing.setDaemon(True)
-    threadThing.start()
-
-print "TIME:::::: "+str(float(time.time()) - startTime)
-
-
-
-#
-for i in range(len(essays)):
+"""for i in range(len(essays)):
     for n in range(len(essays)):
         counter = 0
         copycats = []
@@ -124,6 +128,4 @@ for i in range(len(essays)):
                 print copycat[1]
 
             print "\n\n"
-print "TIME:::::: "+str(float(time.time()) - startTime)
-'''
-
+"""
