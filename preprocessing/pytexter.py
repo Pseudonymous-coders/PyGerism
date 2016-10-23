@@ -103,7 +103,7 @@ class Docxer:
 
             current_percent = float(max_percent) * (float(current_size) / float(total_size))
 
-            self.set_progress(int(current_percent), "Converting file %d of %d" % (current_size, total_size))
+            self.set_progress(int(current_percent), "Converting file %d of %d (%s)" % (current_size, total_size, filer))
 
         print "Done..."
 

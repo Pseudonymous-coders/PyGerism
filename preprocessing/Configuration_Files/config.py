@@ -46,7 +46,6 @@ class Configurator:
     @staticmethod
     def load_config():
         try:
-
             with open(Configurator.path, "r") as config_file:
                 Configurator.parsed = json.loads(config_file.read())
 
@@ -64,7 +63,7 @@ class Configurator:
     @staticmethod
     def save_config():
         if Configurator.parsed is None:
-            print "Failed savign config"
+            print "Failed saving config"
             return
         try:
             Configurator.parsed["proc_docs"] = Configurator.RUN_DOCX
