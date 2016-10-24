@@ -142,8 +142,8 @@ def init(args):
 def main_scan(set_progress):
     global essays
 
-    first = essays[0:][::2][:10]
-    second = essays[1:][::2][:10]
+    first = essays[0:][::2]
+    second = essays[1:][::2]
 
     firstName = "FTHREAD"
     secondName = "STHREAD"

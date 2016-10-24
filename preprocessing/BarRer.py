@@ -1,4 +1,4 @@
-import plotly.plotly as plot
+import plotly.offline.offline as plot
 import plotly.graph_objs as graffer
 
 
@@ -21,5 +21,5 @@ class BarRer:
 
     def show(self):
         print "Showing graphs"
-        plot.image.save_as(self.bars, filename='a-simple-plot.png')
-        #plot.plot(self.bars)
+        # plot.image.save_as(self.bars, filename='a-simple-plot.png')
+        plot.plot(self.bars)
