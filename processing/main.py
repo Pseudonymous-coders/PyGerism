@@ -82,25 +82,27 @@ def scan(name, chunker, essayz):
         perc = float(float(howMany) / float(len(chunker)))
         print "Thread {} {}%".format(name, perc*100)
         for n in range(len(essayz)):
-            chunker[i]['copies'][n] = {'name': essayz[n]['name'], 'counts':0, 'sentences': ["", ""]}
+            chunker[i]['copies'][n] = {'name': essayz[n]['name'], 'counts':0, 'sentences': []}
             for chunkySentence in chunker[i]['sentences']:
                 for essaySentence in essayz[n]['sentences']:
                     if chunkySentence != essaySentence:
-                        if isSimilar(chunkySentence, essaySentence) > 0.1:
-                            chunker[i]['copies'][n]['sentences'].append((chunkySentence,essaySentence))
+                        if isSimilar(chunkySentence, essaySentence) > 0.6:
+                            chunker[i]['copies'][n]['sentences'].append([chunkySentence,essaySentence])
                             #chunker[i]['copies'].append({'name': essay['name'], 'sentence': [chunkySentence, essaySentence]})
 		    	    #essays[howMany-1]['counts'] = counter
                             #essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
-        '''
-        new = old
-        chunker[i]['copies'] = []
-        for x in range(len(old)):
-            new[x]['sentences'] = []
-            for sentence in old[x]['sentences']:
-                if sentence not in new[x]['sentences']:
-                    new[x]['sentences'].append(old[x]['sentences'])
-            new[x]['counts'] = len(new[x]['sentences'])   
-        '''
+
+        for x in range(len(chunker[i]['copies'])):
+            oldSent = chunker[i]['copies'][x]['sentences']
+            chunker[i]['copies'][x]['sentences'] = []
+            for y in range(len(oldSent)):
+                for z in range(len(oldSent[y])):
+                    if oldSent[y][z][-1] != ".":
+                        oldSent[y][z] += "."
+                if oldSent[y] not in chunker[i]['copies'][x]['sentences']:
+                    chunker[i]['copies'][x]['sentences'].append(oldSent[y])
+
+
         for x in range(len(chunker[i]['copies'])):
             chunker[i]['copies'][x]['counts'] = float(len(chunker[i]['copies'][x]['sentences']))
 
@@ -109,8 +111,9 @@ def scan(name, chunker, essayz):
         f.close()
 
 
-first = essays[0:][::2][:3]
-second = essays[1:][::2][:3]
+numOfEssays = 20
+first = essays[0:][::2][:numOfEssays/2]
+second = essays[1:][::2][:numOfEssays/2]
 
 firstName = "first"
 secondName = "second"
@@ -139,20 +142,33 @@ ticker = 0
 
 for essay in essays:
     for copy in essay['copies']:
-        count = float(count) + float(copy['counts'])
-        ticker += 1
+        if copy['counts'] > 0:
+            count = float(count) + float(copy['counts'])
+            ticker += 1
 avg = float(count)/float(ticker)
+breakpoint = avg + (avg/2)
 
 print "Ticker", ticker
 print "Avg", avg
+print "Breakpoint", breakpoint
 print "Count", count
 print "Essay #", len(essays)
+
+table = []
+
+headers = ["Name", "Copyer name", "Counts", "Sentences"]
+
 for essay in essays:
     for copy in essay['copies']:
-        if copy['sentences'] != []:
-            print "{} and {} have {} counts, {} greater than the average ({})".format(essay['name'], copy['name'], copy['counts'], copy['counts'] - avg, avg)
-            print "Copied sentences:"
-            for pair in copy['sentences']:
-                print pair[0]
+        if copy['counts'] > breakpoint: 
+            if copy['sentences'] != []:
+                newPairs = ""
+                for a, b in enumerate(copy['sentences'], 1):
+                    newPairs += "{}. Original: {}         Copy: {}".format(a, b[0], b[1])
+                table.append([essay['name'], copy['name'], copy['counts']])
 
-            print "\n"
+table = sorted(table, key=lambda x: x[2])[::-1]
+
+with open("Report.txt", "w") as rep:
+    rep.write(tabulate.tabulate(table, headers, tablefmt="grid"))
+
