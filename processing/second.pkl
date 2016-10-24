@@ -1,0 +1,361 @@
+(lp0
+(dp1
+S'raw'
+p2
+S"Regional News Story\n\nName: Nicholas Neuweiler\n\nTeam: Kate 34\n\nRegion: Sub-Saharan Africa\n\nTopic: Protesting\n\n\n\nArticle: Protesters demand release of detained Nigerian Shiite leader\n\nDate: April 1, 2016\n\nSource: Fox News\n\n\n\nIn Nigeria the Nigerian Shiite Leader, a Man named Zakzaky, amongst many other people after military raids in north Zaria, killed hundreds of Zakzakys followers along with two of his children, but this was done without actual proof that he had done it. Zakzaky's Islamic Movement in Nigeria says that its members did not kidnap and kill a Nigerian army colonel the week before or that they tried to kill military chief General Tukur Buratai. On friday, March 25, protesters marched along the highways of Zaria, this was one of many protests recently. Zakzaky was not given a trial and people are demanding to give him a lawyer immediately. \n\n\n\nI believe this story affects many people, some of them were the ones that were killed during the movement and people who want to free Zakzaky from where he is being held. This relates to the Shakespearean play King Lear.\n\n\n\n\n\n\n\n\nRegional News Story\n\nName: Nicholas Neuweiler\n\nTeam: Kate 34\n\nRegion: Sub-Saharan Africa\n\nTopic: Crop Exports\n\n\n\nArticle: Drought affects Zimbabwe's main export crop, tobacco\n\nDate: March 30, 2016\n\nSource: Fox News\n\n\n\nZimbabwes has been experiencing a drought for the past year and the drought has been affecting many of the crops in Zimbabwe, including their main export, tobacco. Because of the drought there has been a big decrease in the tobacco industry for Zimbabwe, the drought has affected many families because the crop was their main source of money. The tobacco selling season started on March 30 and has been affected greatly by the 20% decrease in product. The plant sells for $4.40 per kilogram making it the main income source for the struggling african people.\n\n\n\nThis affects many of the African citizens because they will not be able to pay off things that they could before. It also affects the consumers of the tobacco because there is a bit of a decrease in tobacco. \n\n\n\n\n\n\n\n\n\nRegional News Story\n\nName: Nicholas Neuweiler\n\nTeam: Kate 34\n\nRegion: Sub-Saharan Africa\n\nTopic: Terrorists\n\n\n\nArticle: Mali special forces arrest jihadi leader\n\nDate: March 31\n\nSource: Fox News\n\n\n\n\n\nThe mali special forces has claimed to have recently captured a jihadi leader close to islamic extremist group Ansar Dine. The man; Souleymane Keita, was arrested on the Mauritanian border trying The Ansar Dine leader Iyad Ag Ghaly in Mali's Kidal region. Keita is thought to have led attacks against armed Malian forces in south Mali. Ansar Dine has ties to al-Qaeda.\n\n\n\nThis affects the people that were related or friends with the people that Keita had killed and the future people that he could have killed. It also helps their government catch al-Qaeda and closer to stopping Ansar Dine."
+p3
+sS'name'
+p4
+S'SMELI82.txt'
+p5
+sS'sentences'
+p6
+(lp7
+S'In Nigeria the Nigerian Shiite Leader, a Man named Zakzaky, amongst many other people after military raids in north Zaria, killed hundreds of Zakzakys followers along with two of his children, but this was done without actual proof that he had done it'
+p8
+aS"Zakzaky's Islamic Movement in Nigeria says that its members did not kidnap and kill a Nigerian army colonel the week before or that they tried to kill military chief General Tukur Buratai"
+p9
+aS'On friday, March 25, protesters marched along the highways of Zaria, this was one of many protests recently'
+p10
+aS'Zakzaky was not given a trial and people are demanding to give him a lawyer immediately'
+p11
+aS'I believe this story affects many people, some of them were the ones that were killed during the movement and people who want to free Zakzaky from where he is being held'
+p12
+aS'This relates to the Shakespearean play King Lear.'
+p13
+aS'Zimbabwes has been experiencing a drought for the past year and the drought has been affecting many of the crops in Zimbabwe, including their main export, tobacco'
+p14
+aS'Because of the drought there has been a big decrease in the tobacco industry for Zimbabwe, the drought has affected many families because the crop was their main source of money'
+p15
+aS'The tobacco selling season started on March 30 and has been affected greatly by the 20% decrease in product'
+p16
+aS'The plant sells for $4.40 per kilogram making it the main income source for the struggling african people.'
+p17
+aS'This affects many of the African citizens because they will not be able to pay off things that they could before'
+p18
+aS'It also affects the consumers of the tobacco because there is a bit of a decrease in tobacco'
+p19
+aS'The mali special forces has claimed to have recently captured a jihadi leader close to islamic extremist group Ansar Dine'
+p20
+aS"The man; Souleymane Keita, was arrested on the Mauritanian border trying The Ansar Dine leader Iyad Ag Ghaly in Mali's Kidal region"
+p21
+aS'Keita is thought to have led attacks against armed Malian forces in south Mali'
+p22
+aS'Ansar Dine has ties to al-Qaeda.'
+p23
+aS'This affects the people that were related or friends with the people that Keita had killed and the future people that he could have killed'
+p24
+aS'It also helps their government catch al-Qaeda and closer to stopping Ansar Dine.'
+p25
+asa(dp26
+g2
+S'(1)\n\nArthur Sliter\n\nTeam 23\n\nRegion: North America\n\nTopic: HB 1523, how it will affect Mississippi\n\n\n\nArticle: Mississippi\'s \'Religious Freedom\' Bill: What to Know About the New \'Sweeping Anti-LGBT Law\'\n\nDate: 4/6/16\n\nSource: abc\n\n\n\nMississippi governor Phil Bryant signed House Bill 1523 on tuesday which is argued the most sweeping anti-LGBT legislation in the U.S." The outcome of this is that single mothers, same-sex couples and their families, transgender people, and vulnerable youth will face hateful discrimination. They can be turned away from social services like homeless shelters, denied medical care, or be fired from their jobs. This bill allows individuals, businesses and religiously-affiliated organizations (including hospitals, schools, emergency services, and more) to discriminate and deny service to people who conflict with their religious beliefs. This law is meant to Protect peoples Religious Freedom from the governments Discrimination although this is a lightweight excuse to back such an immense law. Other than directly affecting the LGBTQ+ community this law will also affect every life inside of Mississippi state lines. Mississippi has faced major backlash from this legislation and is predicted to lose billions of dollars in funding and may even face lawsuits.  Many of the state\'s largest employers such as Nissan Group of North America, Tyson Food Inc., MGM Resorts International, and Toyota publicly shared their opposition to the appalling legislation, joining national corporations such as AT&T, IBM, Levi Strauss & Co, MassMutual, General Electric, and Hyatt Hotel Corporations. Thousands of Mississippians, regardless of sexuallity, are ashamed of their states actions and ACLU of Mississippi commented  "Far from protecting anyone from government discrimination as the bill claims, it is an attack on the citizens of our state, and it will serve as the Magnolia States badge of shame."\n\nI know religious southerners are crazy but i never expected it to be at this level. The same argument used to legalize gay marriages (religious freedom) is now being used to ban it in Mississippi. Phil Bryant is under the delusion that the government legalizing marriage equality is discrimination towards the religious. This will allow people to be denied services they need and deserve and will affect thousands of people. Even if you do not agree with same-sex marriages, this legislature has outraged many major employers and corporations that operate within and fund Mississippi. The state could lose billions of dollars in funds, face lawsuits, and much more. Neighboring states are also appalled and problems between them may arise. I do not possess enough knowledge of shakespeare  to adapt this into a shakespearean play.\n\n\n\n(2)\n\nArthur Sliter\n\nTeam 23\n\nEurope\n\nMigrants repelled with tear gas, over 300 injured\n\n\n\nHundreds Hurt as Migrants Confront Macedonian Border Police\n\n4/10/16\n\nabc\n\nOn Saturday, migrants fought with Macedonian police after being stopped from scaling the border fence with Greece. Macedonian police used tear gas, stun grenades, plastic bullets, and a water cannon to stop the migrants. The fights continued into the afternoon and the amount of tear gas used was so overwhelming that the effects could be felt by 11,000 migrants camping in the nearby town of Idomeni, many fled the camp to escape the painful gas. The aid agency Doctors without borders reported about 300 people for injuries and six were hospitalized. Greece criticised Macedonian police for using excessive force.\n\n\n\n Many people are fleeing their homelands because of IS militants. Abd Ahmad, 27, an Iraqi Kurd who is traveling with his wife and their 1 year old daughter, said life in the Idomeni camp was "difficult for the child"  but not nearly as dangerous as conditions back home. He said Islamic State militants killed a 7-year-old sister and 11-year-old brother in Iraq, while another brother already had reached Germany and another sister was in Finland. IS militants are ruthless and brutal and are driving people out of their own homes. Many of these people in Macedonia are fleeing towards Greece but Macedonia has shut down its borders and will not allow the migrants to leave. Macedonian police used some heavy force in order to keep the migrants from leaving. I do not think the amount of force used was overly excessive but i do think it could\'ve been handled just as effectively with less force.  I do not possess enough knowledge of shakespeare  to adapt this into a shakespearean play.\n\n\n\n\n\n(3)\n\nArthur Sliter\n\nTeam 23\n\nAsia\n\nHong Kong teen creates new Democracy party\n\nHong Kong Teen Democracy Activist Forms New Political Party\n\n\n\n  4/10/16\n\nAbc\n\n\n\nTeen activist Joshua Wong unveiled a pew political party on saturday that plans to have candidates in upcoming elections, marking the next step in pro-democracy movements in the southern Chinese city. This new party is called Demosisto. The 19 year old has founded many activist groups including one named Scholarism which mostly contained highschool students. He later dissolved Scholarism in order to concentrate on Demosisto. Wong says DEmosistos goal is to hold a vote in 10 years to decide whether Hong Kong should have self-determination for its future after 2047.\n\n\n\nI\'m not very good with politics so this part will be short but i believe this new party will allow more chinese citizens to have a say in their lives and loosen the communist grips. Many people may be against the idea because people may be afraid and used to the communist system and to want to change things up. I believe this will better China. I do not possess enough knowledge of shakespeare  to adapt this into a shakespearean play.'
+p27
+sS'counts'
+p28
+I0
+sS'copies'
+p29
+(dp30
+g4
+S'SMELI59.txt'
+p31
+sS'sentence'
+p32
+(lp33
+S'Macedonian police used tear gas, stun grenades, plastic bullets, and a water cannon to stop the migrants'
+p34
+aS'As a retaliation, the Macedonian police use tear gas, plastic bullets stun grenades and water cannons to stop them'
+p35
+assg4
+S'SMELI108.txt'
+p36
+sg6
+(lp37
+S'Mississippi governor Phil Bryant signed House Bill 1523 on tuesday which is argued the most sweeping anti-LGBT legislation in the U.S." The outcome of this is that single mothers, same-sex couples and their families, transgender people, and vulnerable youth will face hateful discrimination'
+p38
+aS'They can be turned away from social services like homeless shelters, denied medical care, or be fired from their jobs'
+p39
+aS'This bill allows individuals, businesses and religiously-affiliated organizations (including hospitals, schools, emergency services, and more) to discriminate and deny service to people who conflict with their religious beliefs'
+p40
+aS'This law is meant to Protect peoples Religious Freedom from the governments Discrimination although this is a lightweight excuse to back such an immense law'
+p41
+aS'Other than directly affecting the LGBTQ+ community this law will also affect every life inside of Mississippi state lines'
+p42
+aS'Mississippi has faced major backlash from this legislation and is predicted to lose billions of dollars in funding and may even face lawsuits'
+p43
+aS"Many of the state's largest employers such as Nissan Group of North America, Tyson Food Inc., MGM Resorts International, and Toyota publicly shared their opposition to the appalling legislation, joining national corporations such as AT&T, IBM, Levi Strauss & Co, MassMutual, General Electric, and Hyatt Hotel Corporations"
+p44
+aS'Thousands of Mississippians, regardless of sexuallity, are ashamed of their states actions and ACLU of Mississippi commented  "Far from protecting anyone from government discrimination as the bill claims, it is an attack on the citizens of our state, and it will serve as the Magnolia States badge of shame."'
+p45
+aS'I know religious southerners are crazy but i never expected it to be at this level'
+p46
+aS'The same argument used to legalize gay marriages (religious freedom) is now being used to ban it in Mississippi'
+p47
+aS'Phil Bryant is under the delusion that the government legalizing marriage equality is discrimination towards the religious'
+p48
+aS'This will allow people to be denied services they need and deserve and will affect thousands of people'
+p49
+aS'Even if you do not agree with same-sex marriages, this legislature has outraged many major employers and corporations that operate within and fund Mississippi'
+p50
+aS'The state could lose billions of dollars in funds, face lawsuits, and much more'
+p51
+aS'Neighboring states are also appalled and problems between them may arise'
+p52
+aS'I do not possess enough knowledge of shakespeare  to adapt this into a shakespearean play.'
+p53
+aS'On Saturday, migrants fought with Macedonian police after being stopped from scaling the border fence with Greece'
+p54
+ag34
+aS'The fights continued into the afternoon and the amount of tear gas used was so overwhelming that the effects could be felt by 11,000 migrants camping in the nearby town of Idomeni, many fled the camp to escape the painful gas'
+p55
+aS'The aid agency Doctors without borders reported about 300 people for injuries and six were hospitalized'
+p56
+aS'Greece criticised Macedonian police for using excessive force.'
+p57
+aS'Many people are fleeing their homelands because of IS militants'
+p58
+aS'Abd Ahmad, 27, an Iraqi Kurd who is traveling with his wife and their 1 year old daughter, said life in the Idomeni camp was "difficult for the child"  but not nearly as dangerous as conditions back home'
+p59
+aS'He said Islamic State militants killed a 7-year-old sister and 11-year-old brother in Iraq, while another brother already had reached Germany and another sister was in Finland'
+p60
+aS'IS militants are ruthless and brutal and are driving people out of their own homes'
+p61
+aS'Many of these people in Macedonia are fleeing towards Greece but Macedonia has shut down its borders and will not allow the migrants to leave'
+p62
+aS'Macedonian police used some heavy force in order to keep the migrants from leaving'
+p63
+aS"I do not think the amount of force used was overly excessive but i do think it could've been handled just as effectively with less force"
+p64
+aS'I do not possess enough knowledge of shakespeare  to adapt this into a shakespearean play.'
+p65
+aS'Teen activist Joshua Wong unveiled a pew political party on saturday that plans to have candidates in upcoming elections, marking the next step in pro-democracy movements in the southern Chinese city'
+p66
+aS'This new party is called Demosisto'
+p67
+aS'The 19 year old has founded many activist groups including one named Scholarism which mostly contained highschool students'
+p68
+aS'He later dissolved Scholarism in order to concentrate on Demosisto'
+p69
+aS'Wong says DEmosistos goal is to hold a vote in 10 years to decide whether Hong Kong should have self-determination for its future after 2047.'
+p70
+aS"I'm not very good with politics so this part will be short but i believe this new party will allow more chinese citizens to have a say in their lives and loosen the communist grips"
+p71
+aS'Many people may be against the idea because people may be afraid and used to the communist system and to want to change things up'
+p72
+aS'I believe this will better China'
+p73
+aS'I do not possess enough knowledge of shakespeare  to adapt this into a shakespearean play.'
+p74
+asa(dp75
+g2
+S'Name: Matthew Orsborn\n\nTeam: Green/Beatrice 5\n\nRegion:Asia\n\nTopic: Deadly Hot Temperatures in India\n\nArticle: India weather: Dangerous temperatures arrive early\n\nDate: 4/12/16\n\nSource: BBC\n\n\n\nThere has been almost 100 deaths in the southern parts of India from having one of the hottest days ever recorded in April, temperatures reached 48.8C (119.84F) on Monday. The heatwave is covering most of northern india and is now reaching temperatures of 40C (104F) in 3 days in a row. Life threatening temperatures is now becoming more normal and is coming earlier than usual as well as staying longer. Wind from the west normally keeps area cool with nice winds from the sea of Bengal but because of the extreme temperatures the wind is now super hot and making it fatal for the land and the people living there. Many parts of asia are dry and baked from high temperatures and a poor monsoon season in 2015. Monsoon season is time of seasonal winds and precipitation or rain. Some areas receive half of the normal amount of rain and the ground which is super dry reflects and causes the air to become even hotter. Only relief from the heat comes from monsoon season and it doesn\'t normally come until mid-June. Last year there was a similar heat wave that swept through and had killed an estimated 2000 people. The disaster management officials estimated the death toll may reach 100 by the beginning of the week. \n\n\n\nI find it sad that with current technologies and architecture in some countries, huge countries still suffer to something we don\'t think about as being as life threatening yet people in india have to constantly hope not to fall to something like weather. This could also open our eyes to the issue of global warming. The records for highest temperature are always being broken because the world is slowly getting getting warmer and warmer. This does not relate to shakespeare. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nName: Matthew Orsborn\n\nTeam: Green/Beatrice 5\n\nRegion:Asia\n\nTopic: Isis Brutality\n\nArticle: Afghanistan: Former Taliban fighters flee ISIS brutality\n\nDate: 4/12/16\n\nSource: CNN\n\n\n\nRecently a couple of taliban fighters were approached by Isis and offered superior weapons and little choice but to accept. The taliban leader of their faction pledged allegiance to Isis while on a trip to pakistan. They quickly realized that Isiss true agenda wasnt to help ordinary afghans. They just like beheading said one of the former fighters, "They knew who was rich to take their money, and the poor they would arm to fight with them, or kill them the other added. There were many stories of how they would kill to kill and do very unislamic things like leave the bodies unburied after killing. They quickly realized that this new friendship was a mistake and needed to leave. They said the worst part was learning that if you dies while serving them then your family wouldn\'t be given to your relatives but placed into a camp. They two men were happy when drones would fly over their village because they would target and kill Isis members as they step out of their houses. They also stated that the government has made no progress and the only thing that seems to be effective is bombing. Isis members would kill anyone they caught and burn down their houses. They burned down my house too. One time they made me kneel on explosives and give a speech before being blown up, the video was posted to facebook for the world to see.\n\n\n\nIt\'s sickening to hear about these conditions people have to live through. They don\'t have a choice but to comply or be beheaded for the entire world to see. I believe that we are trying to contain it with constant airstrikes and drone attacks but stuff like this still happens all the time. This does not relate to shakespeare. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nName: Matthew Orsborn\n\nTeam: Green/Beatrice 5\n\nRegion:Asia\n\nTopic: Chinas attempt to cut down in terrorism promotions\n\nArticle: China tech companies pledge to tackle content that promotes terrorism\n\nDate: 4/12/16\n\nSource: the guardian\n\n\n\nTwenty five Chinese technology companies have agreed to attack pictures and information that supports or promotes terrorism. The Cyberspace Administration of China said the companies had promised to handle in a timely way terror-related harmful, illegal information, create a clear internet space and maintain social stability. The regulator said that more than 25,000 posts, 4,000 videos and 200 accounts had been removed from the internet so far this year that involve illegal, terror-related content. China also passed an anti-terrorism law in december that requires technology firms to help decrypt information and cooperate with the government in fighting terrorism. Critics say China uses its counter-terror and national security regulations to silence free speech. China defends the law saying it does what western nations already do in asking technology firms to help fight terror. The law has caused unease in the western capitals. China says it faces a serious threat from groups such as the East Turkestan Islamic Movement (ETIM), which works in Chinas western region of Xinjiang, home to the Muslim Uighur people, where hundreds have died of violence in recent years. Rights groups and many foreign experts though say China has never presented any convincing evidence to prove ETIM exists as a well-organised group capable of the kinds of attacks China blames it for.\n\n\n\nIt\'s good to see that China is doing something to fight against terrorism. Although i can see why law is controversial in the sense of weakening securities and protection in order to be able to control accounts. Theyre setting an example and hopefully people will follow in the fight against terrorism. This does not relate to shakespeare.'
+p76
+sg28
+I2
+sg29
+(dp77
+g4
+S'SMELI46.txt'
+p78
+sg32
+(lp79
+S'This does not relate to shakespeare.'
+p80
+aS'This is not related to shakespeare in any way.'
+p81
+assg4
+S'SMELI85.txt'
+p82
+sg6
+(lp83
+S'There has been almost 100 deaths in the southern parts of India from having one of the hottest days ever recorded in April, temperatures reached 48.8C (119.84F) on Monday'
+p84
+aS'The heatwave is covering most of northern india and is now reaching temperatures of 40C (104F) in 3 days in a row'
+p85
+aS'Life threatening temperatures is now becoming more normal and is coming earlier than usual as well as staying longer'
+p86
+aS'Wind from the west normally keeps area cool with nice winds from the sea of Bengal but because of the extreme temperatures the wind is now super hot and making it fatal for the land and the people living there'
+p87
+aS'Many parts of asia are dry and baked from high temperatures and a poor monsoon season in 2015'
+p88
+aS'Monsoon season is time of seasonal winds and precipitation or rain'
+p89
+aS'Some areas receive half of the normal amount of rain and the ground which is super dry reflects and causes the air to become even hotter'
+p90
+aS"Only relief from the heat comes from monsoon season and it doesn't normally come until mid-June"
+p91
+aS'Last year there was a similar heat wave that swept through and had killed an estimated 2000 people'
+p92
+aS'The disaster management officials estimated the death toll may reach 100 by the beginning of the week'
+p93
+aS"I find it sad that with current technologies and architecture in some countries, huge countries still suffer to something we don't think about as being as life threatening yet people in india have to constantly hope not to fall to something like weather"
+p94
+aS'This could also open our eyes to the issue of global warming'
+p95
+aS'The records for highest temperature are always being broken because the world is slowly getting getting warmer and warmer'
+p96
+aS'This does not relate to shakespeare'
+p97
+aS'Recently a couple of taliban fighters were approached by Isis and offered superior weapons and little choice but to accept'
+p98
+aS'The taliban leader of their faction pledged allegiance to Isis while on a trip to pakistan'
+p99
+aS'They quickly realized that Isiss true agenda wasnt to help ordinary afghans'
+p100
+aS'They just like beheading said one of the former fighters, "They knew who was rich to take their money, and the poor they would arm to fight with them, or kill them the other added'
+p101
+aS'There were many stories of how they would kill to kill and do very unislamic things like leave the bodies unburied after killing'
+p102
+aS'They quickly realized that this new friendship was a mistake and needed to leave'
+p103
+aS"They said the worst part was learning that if you dies while serving them then your family wouldn't be given to your relatives but placed into a camp"
+p104
+aS'They two men were happy when drones would fly over their village because they would target and kill Isis members as they step out of their houses'
+p105
+aS'They also stated that the government has made no progress and the only thing that seems to be effective is bombing'
+p106
+aS'Isis members would kill anyone they caught and burn down their houses'
+p107
+aS'They burned down my house too'
+p108
+aS'One time they made me kneel on explosives and give a speech before being blown up, the video was posted to facebook for the world to see.'
+p109
+aS"It's sickening to hear about these conditions people have to live through"
+p110
+aS"They don't have a choice but to comply or be beheaded for the entire world to see"
+p111
+aS'I believe that we are trying to contain it with constant airstrikes and drone attacks but stuff like this still happens all the time'
+p112
+aS'This does not relate to shakespeare'
+p113
+aS'Twenty five Chinese technology companies have agreed to attack pictures and information that supports or promotes terrorism'
+p114
+aS'The Cyberspace Administration of China said the companies had promised to handle in a timely way terror-related harmful, illegal information, create a clear internet space and maintain social stability'
+p115
+aS'The regulator said that more than 25,000 posts, 4,000 videos and 200 accounts had been removed from the internet so far this year that involve illegal, terror-related content'
+p116
+aS'China also passed an anti-terrorism law in december that requires technology firms to help decrypt information and cooperate with the government in fighting terrorism'
+p117
+aS'Critics say China uses its counter-terror and national security regulations to silence free speech'
+p118
+aS'China defends the law saying it does what western nations already do in asking technology firms to help fight terror'
+p119
+aS'The law has caused unease in the western capitals'
+p120
+aS'China says it faces a serious threat from groups such as the East Turkestan Islamic Movement (ETIM), which works in Chinas western region of Xinjiang, home to the Muslim Uighur people, where hundreds have died of violence in recent years'
+p121
+aS'Rights groups and many foreign experts though say China has never presented any convincing evidence to prove ETIM exists as a well-organised group capable of the kinds of attacks China blames it for.'
+p122
+aS"It's good to see that China is doing something to fight against terrorism"
+p123
+aS'Although i can see why law is controversial in the sense of weakening securities and protection in order to be able to control accounts'
+p124
+aS'Theyre setting an example and hopefully people will follow in the fight against terrorism'
+p125
+ag80
+asa(dp126
+g2
+S"Adirenna Pabalan\n\nTeam 12\n\nRegion: FSR \n\nPutin is no master of strategy \n\nApril 10,2016\n\nSource:The Telegraph\n\nVladimir Putin ,thought to be a strategic genius, finds that his plans to attack Syria backfire. Putin was completed to deploy his forces to save a feckless ally. To make matters worse Russia has invested so much on saving  Bashar al-Assad that Putin risk being manipulated by the trickster in Damascus. A new alliance,last summer, captured almost all of Idlib province and directly threatened Assads heartland.    \n\nIf Russia wasnt so power hungry Putins strategies wouldnt be questioned around Russas people. Using shakespeare's stories in this situation using the lost of power and all the tragedies that have happened would create a very emotional piece that could slightly be compared to another move. Depending on how it is directed.    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdrienna Pabalan\n\nTeam 12\n\nRegion: FSR\n\nA New World War? Russia and America Look For a Way to Cool Down Syria  \n\nFebruary 15,2016 \n\nThe Fiscal Times\n\n\n\nThe Syrian crisis has grown too large to be ignored and has grown too real for the world. People can no longer think about Syria separately from Ukraine from the familiar buildup of military forces on either side of Russias borders with Europe. The new imperative falls to Washington and Moscow. Both must transcend worsening tension between them in the interest of addressing a security environment whose perils now supersede narrow strategic ambitions.    \n\nWondering what would happen is Putin didnt have a role in Russias military actions would change most of the news significantly. If this was turned into Shakespearean play two poems of his would have to combine to relate to something that represents something of his.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdrienna Pabalan \n\nTeam 12\n\nRegion\n\nDon't Fear The Russians \n\nMarch 17,2016\n\nThe New York Times\n\n\n\nVladimir V. Putin is showed to be a hero. Saving his client,  intervened the the Syrian War, and annexed conflict in Ukraine. Russia is withdrawing its troops  from Syria and finding a way to stop them in a different way. Air support and help from the U.S would be a way to stop more conflict in Syria\n\nIf Russia didnt get into so many war before the Syrian War the re would be no reason the fear the Russians.  In a Shakespearian play a tragedy would turn into kind end to a story."
+p127
+sg4
+S'SMELI86.txt'
+p128
+sg6
+(lp129
+S'Vladimir Putin ,thought to be a strategic genius, finds that his plans to attack Syria backfire'
+p130
+aS'Putin was completed to deploy his forces to save a feckless ally'
+p131
+aS'To make matters worse Russia has invested so much on saving  Bashar al-Assad that Putin risk being manipulated by the trickster in Damascus'
+p132
+aS'A new alliance,last summer, captured almost all of Idlib province and directly threatened Assads heartland'
+p133
+aS'If Russia wasnt so power hungry Putins strategies wouldnt be questioned around Russas people'
+p134
+aS"Using shakespeare's stories in this situation using the lost of power and all the tragedies that have happened would create a very emotional piece that could slightly be compared to another move"
+p135
+aS'Depending on how it is directed'
+p136
+aS'The Syrian crisis has grown too large to be ignored and has grown too real for the world'
+p137
+aS'People can no longer think about Syria separately from Ukraine from the familiar buildup of military forces on either side of Russias borders with Europe'
+p138
+aS'The new imperative falls to Washington and Moscow'
+p139
+aS'Both must transcend worsening tension between them in the interest of addressing a security environment whose perils now supersede narrow strategic ambitions'
+p140
+aS'Wondering what would happen is Putin didnt have a role in Russias military actions would change most of the news significantly'
+p141
+aS'If this was turned into Shakespearean play two poems of his would have to combine to relate to something that represents something of his'
+p142
+aS'Putin is showed to be a hero'
+p143
+aS'Saving his client,  intervened the the Syrian War, and annexed conflict in Ukraine'
+p144
+aS'Russia is withdrawing its troops  from Syria and finding a way to stop them in a different way'
+p145
+aS'Air support and help from the U.S would be a way to stop more conflict in Syria'
+p146
+aS'If Russia didnt get into so many war before the Syrian War the re would be no reason the fear the Russians'
+p147
+aS'In a Shakespearian play a tragedy would turn into kind end to a story.'
+p148
+asa(dp149
+g2
+S"South Sudan Rebels Move Into Capital\n\nhttp://www.usnews.com/news/world/articles/2016-04-07/south-sudan-rebels-take-up-designated-positions-in-juba\n\nSource: US news\n\nBeck Sutherland\n\n22\n\nSWANA\n\nPublished on 4/8/2016\n\n\n\nA Wars End?\n\nIn south sudan rebels and the military are having a peace talk, but the look ready to fight. In the capital city of Sudan  to armies have set up camp, the rebel army consisting of 3,000. This is a risky but necessary step. The rebel army is armed with only assault rifles the army has tanks and other armaments stationed there. The reason you should care is because this could mean the end of the war in Sudan, and many people will be able to return home again.\n\nI think its great that the soldiers in south sudan will get to go home. I also think its good that the rebels will be able to go home safely . I dont know enough shakespeare to say if and how this relates. \n\n\n\nUK Says Hundreds of Britons Involved in People-Smuggling\n\nhttp://abcnews.go.com/International/wireStory/uk-hundreds-britons-involved-people-smuggling-38333978\n\nSource: abc news\n\nBeck Sutherland\n\n22\n\nEurope \n\nPublished on 4/12/2016\n\nIllegal immigrants paying smugglers\n\n\n\nIllegal immigrants are paying smugglers large sums of money to transport them across the border. Apparently a large some of people are involved in smuggling people. This affects us because they are being smuggled to place all over the world. \n\nI think it's terrible that people have to go to such lengths to find a safe place to stay. I dont know enough shakespeare to say if and how this relates. \n\n\n\nSWANA\n\nhttp://www.bbc.com/news/world-middle-east-36011794\n\nSource: bbc news\n\nBeck Sutherland\n\n22\n\nEurope \n\nPublished on 4/12/2016\n\n\n\nA slow truce  \n\nA truce has been set up in yemen by the UN between yemen's government and the rebels. Both sides say they will not attack but reserve the right to respond to attacks. There have been several attacks reported from both sides but neither side claims responsibility for. \n\nI think its a good that a truce is in effect, and that maybe its possible to achieve peace in Yemen. I dont know enough shakespeare for this."
+p150
+sg28
+I2
+sg29
+(dp151
+g4
+S'SMELI127.txt'
+p152
+sg32
+(lp153
+S'I dont know enough shakespeare for this.'
+p154
+aS'I dont know enough shakespeare to compare this news story to.'
+p155
+assg4
+S'SMELI112.txt'
+p156
+sg6
+(lp157
+S'In south sudan rebels and the military are having a peace talk, but the look ready to fight'
+p158
+aS'In the capital city of Sudan  to armies have set up camp, the rebel army consisting of 3,000'
+p159
+aS'This is a risky but necessary step'
+p160
+aS'The rebel army is armed with only assault rifles the army has tanks and other armaments stationed there'
+p161
+aS'The reason you should care is because this could mean the end of the war in Sudan, and many people will be able to return home again.'
+p162
+aS'I think its great that the soldiers in south sudan will get to go home'
+p163
+aS'I also think its good that the rebels will be able to go home safely'
+p164
+aS'I dont know enough shakespeare to say if and how this relates'
+p165
+aS'Illegal immigrants are paying smugglers large sums of money to transport them across the border'
+p166
+aS'Apparently a large some of people are involved in smuggling people'
+p167
+aS'This affects us because they are being smuggled to place all over the world'
+p168
+aS"I think it's terrible that people have to go to such lengths to find a safe place to stay"
+p169
+aS'I dont know enough shakespeare to say if and how this relates'
+p170
+aS"A truce has been set up in yemen by the UN between yemen's government and the rebels"
+p171
+aS'Both sides say they will not attack but reserve the right to respond to attacks'
+p172
+aS'There have been several attacks reported from both sides but neither side claims responsibility for'
+p173
+aS'I think its a good that a truce is in effect, and that maybe its possible to achieve peace in Yemen'
+p174
+ag154
+asa.

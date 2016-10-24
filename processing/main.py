@@ -1,15 +1,16 @@
 import glob
 import re
 import time
+import pickle 
+from multiprocessing import Process, queues
 from time import sleep
 from Levenshtein import ratio
-#from difflib import SequenceMatcher
 
 startTime = float(time.time())
 
 def isSimilar(a, b):
     return ratio(a,b)
-    #return SequenceMatcher(None, a, b).ratio()
+
 
 def median(lst):
     sortedLst = sorted(lst)
@@ -71,28 +72,58 @@ for i in range(len(rawEssays)):
 howMany = 0
 perc = 0.0
 
-def scan(chunker):
+def scan(name, chunker, essayz):
     global howMany
-    for chunky in chunker:
+    for i in range(len(chunker)):
         howMany += 1
         perc = float(float(howMany) / float(len(chunker)))
-        print perc
-        for essay in essays:
-            copys = []
+        print "Essay num {} at {}%".format(howMany, perc*100)
+        for essay in essayz:
             counter = 0
-            for chunkySentence in chunky['sentences']:
+            for chunkySentence in chunker[i]['sentences']:
                 for essaySentence in essay['sentences']:
                     if chunkySentence != essaySentence:
                         if isSimilar(chunkySentence, essaySentence) > 0.7:
-                            essays[howMany-1]['counts'] = counter
-                            essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
+                            chunker[i]['counts'] = counter
+                            chunker[i]['copies'] = {'name': essay['name'], 'sentence': [chunkySentence, essaySentence]}
+		    	    #essays[howMany-1]['counts'] = counter
+                            #essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
                             counter += 1
-                            copys.append(chunkySentence)
-                            copys.append(essaySentence)
+    with open(name+".pkl", "wb") as f:
+        pickle.dump(chunker, f)
+        f.close()
 
 
+first = essays[0:][::2][:5]
+second = essays[1:][::2][:5]
+
+firstName = "first"
+secondName = "second"
+
+jobs = []
+fi = Process(target=scan, args=(firstName, first, essays))
+se = Process(target=scan, args=(secondName, second, essays))
+jobs.extend([fi,se])
+fi.start()
+se.start()
+fi.join()
+se.join()
+
+essays = []
+
+with open(firstName+".pkl", "rb") as f, open(secondName+".pkl", "rb") as s:
+    firstEssays = pickle.load(f)
+    secondEssays = pickle.load(s)
+    essays.extend(firstEssays)
+    essays.extend(secondEssays)
+    
+print len(essays)
+
+
+print "DONE TYPE"
+'''
 looper = essays
-scan(looper)
+#scan(looper)
 
 counts = []
 
@@ -111,6 +142,7 @@ f.close()
 
 
 print "TIME:::::: "+str(float(time.time()) - startTime)
+
 """for i in range(len(essays)):
     for n in range(len(essays)):
         counter = 0
@@ -129,3 +161,4 @@ print "TIME:::::: "+str(float(time.time()) - startTime)
 
             print "\n\n"
 """
+'''
