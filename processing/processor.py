@@ -227,4 +227,4 @@ def main_scan(set_progress):
     with open(globfolder + "Report.txt", "w") as rep:
         rep.write(tabulate.tabulate(table, headers, tablefmt="grid"))
 
-    return table, headers
+    return table

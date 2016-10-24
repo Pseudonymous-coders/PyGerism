@@ -69,10 +69,10 @@ def graph_all(new_data):
     Ydata = []
     Names = []
 
-    for name, copyname, counts in new_data[0]:
+    for name, copyname, counts in new_data:
         Xdata.append(str(name))
         Ydata.append(str(counts))
-        Names.append(str(copyname))
+        Names.append(str("UGABUGA"))
 
     bargraph.add_bar(Xdata, Ydata, Names)
     bargraph.show()
