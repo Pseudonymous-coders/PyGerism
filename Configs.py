@@ -69,12 +69,12 @@ gui.protocol("WM_DELETE_WINDOW", exit_app)
 gui.wm_resizable(Configurator.CONFIG_WIDTH, Configurator.CONFIG_HEIGHT)
 gui.style = ttk.Style()
 
-available_themes = gui.style.theme_names()
+available_themes = [] # gui.style.theme_names()
 
 print "Available Tkinter themes: " + str(available_themes)
 print "Using theme: " + Configurator.WIN_THEME
 
-gui.style.theme_use(Configurator.WIN_THEME)
+#gui.style.theme_use(Configurator.WIN_THEME)
 
 sense_var = StringVar()
 horz_var = StringVar()

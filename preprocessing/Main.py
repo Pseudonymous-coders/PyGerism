@@ -28,7 +28,7 @@ gui.style = ttk.Style()
 print "Available Tkinter themes: " + str(gui.style.theme_names())
 print "Using theme: " + Configurator.WIN_THEME
 
-gui.style.theme_use(Configurator.WIN_THEME)
+#gui.style.theme_use(Configurator.WIN_THEME)
 
 # Setup progress bar
 progress = ttk.Progressbar(gui, orient="horizontal", length=Configurator.WIN_WIDTH, mode="determinate")

@@ -57,9 +57,11 @@ raw = [" ", " "]
 rawNames = raw[0]
 rawEssays = raw[1]
 
+globfolder = ""
 
 def load_folder(path):
-    global raw, rawNames, rawEssays
+    global raw, rawNames, rawEssays, globfolder
+    globfolder = path
     raw = getFiles(path)
     print "Got files: " + str(raw)
     rawNames = raw[0]
@@ -140,7 +142,7 @@ def init(args):
 
 
 def main_scan(set_progress):
-    global essays
+    global essays, globfolder
 
     first = essays[0:][::2]
     second = essays[1:][::2]
@@ -219,7 +221,10 @@ def main_scan(set_progress):
 
     table = sorted(table, key=lambda x: x[2])[::-1]
 
-    with open("Report.txt", "w") as rep:
+    if globfolder[-1] != "/":
+        globfolder += "/"
+
+    with open(globfolder + "Report.txt", "w") as rep:
         rep.write(tabulate.tabulate(table, headers, tablefmt="grid"))
 
     return table, headers
