@@ -1,15 +1,18 @@
 import glob
+import os
 import re
 import time
+import pickle 
+import tabulate
+from multiprocessing import Process, queues
 from time import sleep
 from Levenshtein import ratio
-#from difflib import SequenceMatcher
 
 startTime = float(time.time())
 
 def isSimilar(a, b):
     return ratio(a,b)
-    #return SequenceMatcher(None, a, b).ratio()
+
 
 def median(lst):
     sortedLst = sorted(lst)
@@ -71,61 +74,85 @@ for i in range(len(rawEssays)):
 howMany = 0
 perc = 0.0
 
-def scan(chunker):
+def scan(name, chunker, essayz):
     global howMany
-    for chunky in chunker:
+    for i in range(len(chunker)):
         howMany += 1
+        chunker[i]['copies'] = [{}] * len(essayz)
         perc = float(float(howMany) / float(len(chunker)))
-        print perc
-        for essay in essays:
-            copys = []
-            counter = 0
-            for chunkySentence in chunky['sentences']:
-                for essaySentence in essay['sentences']:
+        print "Thread {} {}%".format(name, perc*100)
+        for n in range(len(essayz)):
+            chunker[i]['copies'][n] = {'name': essayz[n]['name'], 'counts':0, 'sentences': ["", ""]}
+            for chunkySentence in chunker[i]['sentences']:
+                for essaySentence in essayz[n]['sentences']:
                     if chunkySentence != essaySentence:
-                        if isSimilar(chunkySentence, essaySentence) > 0.7:
-                            essays[howMany-1]['counts'] = counter
-                            essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
-                            counter += 1
-                            copys.append(chunkySentence)
-                            copys.append(essaySentence)
+                        if isSimilar(chunkySentence, essaySentence) > 0.1:
+                            chunker[i]['copies'][n]['sentences'].append((chunkySentence,essaySentence))
+                            #chunker[i]['copies'].append({'name': essay['name'], 'sentence': [chunkySentence, essaySentence]})
+		    	    #essays[howMany-1]['counts'] = counter
+                            #essays[howMany-1]['copies'] = {'name':essay['name'], 'sentence': [chunkySentence, essaySentence]}
+        '''
+        new = old
+        chunker[i]['copies'] = []
+        for x in range(len(old)):
+            new[x]['sentences'] = []
+            for sentence in old[x]['sentences']:
+                if sentence not in new[x]['sentences']:
+                    new[x]['sentences'].append(old[x]['sentences'])
+            new[x]['counts'] = len(new[x]['sentences'])   
+        '''
+        for x in range(len(chunker[i]['copies'])):
+            chunker[i]['copies'][x]['counts'] = float(len(chunker[i]['copies'][x]['sentences']))
+
+    with open(name+".pkl", "wb") as f:
+        pickle.dump(chunker, f)
+        f.close()
 
 
-looper = essays
-scan(looper)
+first = essays[0:][::2][:3]
+second = essays[1:][::2][:3]
 
-counts = []
+firstName = "first"
+secondName = "second"
 
-for essay in looper:
-    if "counts" in essay:
-        counts.append(float(essay['counts']))
-countMed = median(counts)
+jobs = []
+fi = Process(target=scan, args=(firstName, first, essays))
+se = Process(target=scan, args=(secondName, second, essays))
+jobs.extend([fi,se])
+fi.start()
+se.start()
+fi.join()
+se.join()
 
-print countMed
-open('temp.txt', 'w').close()
+essays = []
 
-f = open('temp.txt', 'w')
-f.write
-f.write(":::RED:::")
-f.close()
+with open(firstName+".pkl", "rb") as f, open(secondName+".pkl", "rb") as s:
+    firstEssays = pickle.load(f)
+    secondEssays = pickle.load(s)
+    essays.extend(firstEssays)
+    essays.extend(secondEssays)
+os.remove(firstName+".pkl")
+os.remove(secondName+".pkl")
 
+count = 0
+ticker = 0
 
-print "TIME:::::: "+str(float(time.time()) - startTime)
-"""for i in range(len(essays)):
-    for n in range(len(essays)):
-        counter = 0
-        copycats = []
-        if n != i:
-            for isentence in essays[i]['sentences']:
-                for nsentence in essays[n]['sentences']:
-                    if isSimilar(isentence, nsentence) > 0.6:
-                        counter += 1
-                        copycats.append([isentence,nsentence])
-        if counter >= 1:
-            print "Alert!! {} and {} are flagged {} times, here are the setences:".format(essays[i]['name'], essays[n]['name'], counter)
-            for copycat in copycats:
-                print copycat[0]
-                print copycat[1]
+for essay in essays:
+    for copy in essay['copies']:
+        count = float(count) + float(copy['counts'])
+        ticker += 1
+avg = float(count)/float(ticker)
 
-            print "\n\n"
-"""
+print "Ticker", ticker
+print "Avg", avg
+print "Count", count
+print "Essay #", len(essays)
+for essay in essays:
+    for copy in essay['copies']:
+        if copy['sentences'] != []:
+            print "{} and {} have {} counts, {} greater than the average ({})".format(essay['name'], copy['name'], copy['counts'], copy['counts'] - avg, avg)
+            print "Copied sentences:"
+            for pair in copy['sentences']:
+                print pair[0]
+
+            print "\n"
