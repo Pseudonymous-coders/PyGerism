@@ -3,7 +3,7 @@ from GUI import MessageDialog, FileDialog
 from pytexter import Docxer
 from Configuration_Files.config import Configurator
 from Tkinter import *
-from os.path import sep as pathsep
+from os.path import sep as pathsep, basename
 import ttk
 
 
@@ -90,10 +90,10 @@ def on_start_app(run_type):
     print "Using folder: " + str(folder_use)
 
     new_folder = folder_use + "Examined" + pathsep
-    doc.run_files(folder_use, files, new_folder, set_progress)
+    documents_sizes = doc.run_files(folder_use, files, new_folder, set_progress)
     processed_files = doc.get_folder(new_folder)
 
-    set_progress(10, "Done converting all essays into %s" % new_folder)
+    set_progress(10, "Done converting all essays into %s" % basename(new_folder))
 
     set_progress(100, "Loading graphs, Please wait...")
     graph_all()

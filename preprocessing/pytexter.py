@@ -15,6 +15,7 @@ from FilesConverter import odt_get_text
 from Configuration_Files.config import Configurator
 
 
+# noinspection PyBroadException
 class Docxer:
     def __init__(self):
         self.name = ""
@@ -106,6 +107,7 @@ class Docxer:
             self.set_progress(int(current_percent), "Converting file %d of %d (%s)" % (current_size, total_size, filer))
 
         print "Done..."
+        return total_size
 
     @staticmethod
     def process_pdf(path):
