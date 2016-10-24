@@ -4,6 +4,7 @@ from pytexter import Docxer
 from Configuration_Files.config import Configurator
 from Tkinter import *
 from os.path import sep as pathsep, basename
+from processing import processor
 import ttk
 
 
@@ -60,13 +61,18 @@ def set_progress(current_progress, text):
     update_text.set("%d%% : %s" % (current_progress, text))
 
 
-def graph_all():
+def graph_all(new_data):
     from BarRer import BarRer
     bargraph = BarRer("Bailey Checker Report")
 
-    Xdata = ['wow', 'this', 'is', 'cool']
-    Ydata = [0, 19, 3, 5]
-    Names = ['wow 0', 'this 19', 'is 3', 'cool 5']
+    Xdata = []
+    Ydata = []
+    Names = []
+
+    for name, copyname, counts in new_data[0]:
+        Xdata.append(str(name))
+        Ydata.append(str(counts))
+        Names.append(str(copyname))
 
     bargraph.add_bar(Xdata, Ydata, Names)
     bargraph.show()
@@ -91,12 +97,15 @@ def on_start_app(run_type):
 
     new_folder = folder_use + "Examined" + pathsep
     documents_sizes = doc.run_files(folder_use, files, new_folder, set_progress)
-    processed_files = doc.get_folder(new_folder)
 
     set_progress(10, "Done converting all essays into %s" % basename(new_folder))
 
+    processor.load_folder(new_folder)
+    processor.process_essays()
+    new_data = processor.main_scan(set_progress)
+
     set_progress(100, "Loading graphs, Please wait...")
-    graph_all()
+    graph_all(new_data)
 
     '''
     print "Analyzer Started\n\n"

@@ -58,7 +58,7 @@ class FileDialog:
         homedir = expanduser("~")
         filename = None
         try:
-            filename = askdirectory(initialdir="/home/smerkous/Desktop/BaileyChecker/essays/"
+            filename = askdirectory(initialdir="/root/SCAN"
                                     , title="Please select the parent folder with essays",
                                     mustexist=True)
             if filename is None or len(filename) == 0:
