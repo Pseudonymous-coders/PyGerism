@@ -1,8 +1,7 @@
-from threading import Thread
-from Tkinter import *
 import tkMessageBox
-from tkFileDialog import askdirectory
+from Tkinter import *
 from os.path import expanduser
+from tkFileDialog import askdirectory
 
 
 class MessageDialog:
@@ -59,7 +58,7 @@ class FileDialog:
         homedir = expanduser("~")
         filename = None
         try:
-            filename = askdirectory(initialdir="/home/smerkous/Desktop/BaileyChecker/essays"
+            filename = askdirectory(initialdir="/home/smerkous/Desktop/BaileyChecker/essays/"
                                     , title="Please select the parent folder with essays",
                                     mustexist=True)
             if filename is None or len(filename) == 0:
@@ -68,7 +67,7 @@ class FileDialog:
             passed = False
         return [passed, filename]
 
-
+"""
 class ProgressBar:
     def __init__(self, width, height, on_quit, title="Scanning progress"):
         GObject.threads_init()
@@ -127,3 +126,4 @@ class ProgressBar:
 
     def destroy(self):
         self.win.destroy()
+"""

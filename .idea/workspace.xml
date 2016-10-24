@@ -2,138 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3163ae24-01c5-4f0c-a0a3-a515af288636" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BaileyChecker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SetCreds.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/processing/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pyScape.iml" afterPath="$PROJECT_DIR$/.idea/pyScape.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI1.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI10.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI100.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI100.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI101.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI101.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI102.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI102.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI103.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI103.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI104.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI104.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI105.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI105.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI106.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI106.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI107.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI107.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI108.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI108.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI109.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI109.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI11.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI11.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI110.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI110.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI111.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI111.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI112.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI112.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI113.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI113.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI114.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI114.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI115.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI115.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI116.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI116.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI117.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI117.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI118.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI118.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI119.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI119.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI12.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI12.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI120.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI120.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI121.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI121.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI122.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI122.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI123.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI123.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI124.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI124.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI125.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI125.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI126.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI126.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI127.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI127.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI13.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI13.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI14.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI14.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI15.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI15.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI16.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI16.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI17.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI17.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI18.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI18.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI19.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI19.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI2.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI20.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI20.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI21.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI21.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI22.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI22.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI23.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI23.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI24.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI24.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI25.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI25.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI26.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI26.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI27.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI27.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI28.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI28.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI29.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI29.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI3.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI30.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI30.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI31.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI31.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI32.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI32.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI33.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI33.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI34.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI34.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI35.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI35.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI36.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI36.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI37.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI37.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI38.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI38.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI39.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI39.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI4.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configs.py" afterPath="$PROJECT_DIR$/Configs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI40.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI40.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI41.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI41.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI42.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI42.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI43.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI43.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI44.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI44.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI45.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI45.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI46.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI46.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI47.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI47.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI48.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI48.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI49.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI49.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI5.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI5.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI50.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI50.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI51.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI51.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI52.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI52.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI53.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI53.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI54.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI54.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI55.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI55.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI56.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI56.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI57.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI57.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI58.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI58.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI59.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI59.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI6.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI6.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI60.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI60.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI61.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI61.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI62.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI62.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI63.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI63.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI64.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI64.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI65.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI65.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI66.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI66.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI67.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI67.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI68.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI68.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI69.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI69.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI7.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI7.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI70.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI70.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI71.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI71.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI72.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI72.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI73.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI73.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI74.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI74.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI75.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI75.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI76.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI76.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI77.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI77.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI78.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI78.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI79.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI79.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI8.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI8.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI80.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI80.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI81.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI81.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI82.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI82.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI83.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI83.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI84.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI84.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI85.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI85.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI86.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI86.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI87.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI87.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI88.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI88.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI89.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI89.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI9.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI9.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI90.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI90.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI91.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI91.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI92.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI92.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI93.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI93.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI94.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI94.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI95.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI95.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI96.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI96.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI97.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI97.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI98.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI98.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essays/Examined/SMELI99.txt" afterPath="$PROJECT_DIR$/essays/Examined/SMELI99.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/BarRer.py" afterPath="$PROJECT_DIR$/preprocessing/BarRer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/Configuration_Files/config.py" afterPath="$PROJECT_DIR$/preprocessing/Configuration_Files/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/FilesConverter.py" afterPath="$PROJECT_DIR$/preprocessing/FilesConverter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/GUI.py" afterPath="$PROJECT_DIR$/preprocessing/GUI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/Main.py" afterPath="$PROJECT_DIR$/preprocessing/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/pytexter.py" afterPath="$PROJECT_DIR$/preprocessing/pytexter.py" />
@@ -150,28 +28,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="pytexter.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/preprocessing/pytexter.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1800">
-                    <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-                    <folding>
-                      <element signature="e#15#37#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="pyScape" />
@@ -181,8 +37,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/preprocessing/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+            <state relative-caret-position="306">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -190,11 +46,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preprocessing/Configuration_Files/config.py">
+      <file leaf-file-name="BaileyChecker.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BaileyChecker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="342">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BarRer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/BarRer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pytexter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/pytexter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1656">
+              <caret line="105" column="118" selection-start-line="105" selection-start-column="118" selection-end-line="105" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -203,10 +83,32 @@
       <file leaf-file-name="GUI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/preprocessing/GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="61" column="92" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
+            <state relative-caret-position="-450">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Configs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/Configuration_Files/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,27 +116,41 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/pytexter.py" />
+        <option value="$PROJECT_DIR$/ConfigMain.py" />
         <option value="$PROJECT_DIR$/preprocessing/FilesConverter.py" />
-        <option value="$PROJECT_DIR$/preprocessing/Configuration_Files/config.py" />
+        <option value="$PROJECT_DIR$/preprocessing/__init__.py" />
+        <option value="$PROJECT_DIR$/preprocessing/Configuration_Files/bailey_config.json" />
+        <option value="$PROJECT_DIR$/Configs.py" />
         <option value="$PROJECT_DIR$/preprocessing/GUI.py" />
+        <option value="$PROJECT_DIR$/SetCreds.py" />
+        <option value="$PROJECT_DIR$/preprocessing/BarRer.py" />
         <option value="$PROJECT_DIR$/preprocessing/pytexter.py" />
+        <option value="$PROJECT_DIR$/preprocessing/temp-plot.html" />
+        <option value="$PROJECT_DIR$/preprocessing/Configuration_Files/config.py" />
+        <option value="$PROJECT_DIR$/BaileyChecker.py" />
+        <option value="$PROJECT_DIR$/processing/__init__.py" />
         <option value="$PROJECT_DIR$/preprocessing/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4793" />
-    <option name="y" value="86" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="4824" />
+    <option name="y" value="173" />
+    <option name="width" value="1301" />
+    <option name="height" value="715" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -261,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,56 +206,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="preprocessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaileyChecker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaileyChecker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preprocessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Configuration_Files" />
+              <option name="myItemId" value="processing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Main (1)">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/preprocessing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Main">
     <configuration default="false" name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyScape" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -353,6 +239,74 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pyScape" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocessing/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Configs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyScape" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Configs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SetCreds" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyScape" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SetCreds.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BarRer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyScape" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocessing/BarRer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BaileyChecker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyScape" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaileyChecker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -491,19 +445,28 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Main (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Configs" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SetCreds" />
+      <item index="3" class="java.lang.String" itemvalue="Python.BarRer" />
+      <item index="4" class="java.lang.String" itemvalue="Python.BaileyChecker" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BaileyChecker" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Configs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.BarRer" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SetCreds" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -516,15 +479,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4793" y="86" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="4824" y="173" width="1301" height="715" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35588008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5046875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -550,64 +513,175 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main.py" />
-    <entry file="file://$PROJECT_DIR$/pytexter.py" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/selenium/webdriver/common/service.py">
+    <entry file="file://$PROJECT_DIR$/preprocessing/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/FilesConverter.py">
+    <entry file="file://$PROJECT_DIR$/Configs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="558">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocessing/Configuration_Files/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/Configuration_Files/bailey_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="154" selection-start-line="0" selection-start-column="154" selection-end-line="0" selection-end-column="154" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytexter.py" />
+    <entry file="file://$PROJECT_DIR$/Main.py" />
+    <entry file="file://$PROJECT_DIR$/preprocessing/FilesConverter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="1292" column="0" selection-start-line="1292" selection-start-column="0" selection-end-line="1292" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SetCreds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/temp-plot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195631">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/Configuration_Files/bailey_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/Configuration_Files/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/BarRer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ghostdriver.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/pytexter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="105" column="118" selection-start-line="105" selection-start-column="118" selection-end-line="105" selection-end-column="118" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocessing/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="61" column="92" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
+        <state relative-caret-position="-450">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Configs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/pytexter.py">
+    <entry file="file://$PROJECT_DIR$/BaileyChecker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        <state relative-caret-position="342">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <element signature="e#15#37#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocessing/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+        <state relative-caret-position="306">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

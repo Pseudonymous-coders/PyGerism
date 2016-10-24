@@ -2,7 +2,7 @@ from string import printable
 from threading import Thread
 from time import sleep
 from splinter import Browser
-from Configuration_Files import config
+from Configuration_Files.config import Configurator
 
 browser = Browser("phantomjs")
 kill = False
@@ -37,7 +37,7 @@ def filters(text):
 def odt_get_text(path):
     global browser, kill
     text = ""
-    time = config.odt_kill_time
+    time = Configurator.ODT_KILL_TIME
     tokill = Thread(target=killer_thread, args=(time,))
     tokill.setDaemon(True)
     tokill.setName("Killer_Thread")
