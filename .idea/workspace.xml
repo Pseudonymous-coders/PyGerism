@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3163ae24-01c5-4f0c-a0a3-a515af288636" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/processing/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/processing/main.py" afterPath="$PROJECT_DIR$/processing/processor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pyScape.iml" afterPath="$PROJECT_DIR$/.idea/pyScape.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/BarRer.py" afterPath="$PROJECT_DIR$/preprocessing/BarRer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/GUI.py" afterPath="$PROJECT_DIR$/preprocessing/GUI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/Main.py" afterPath="$PROJECT_DIR$/preprocessing/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/preprocessing/temp-plot.html" afterPath="$PROJECT_DIR$/preprocessing/temp-plot.html" />
-    </list>
+    <list default="true" id="3163ae24-01c5-4f0c-a0a3-a515af288636" name="Default" comment="" />
     <ignored path="pyScape.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +23,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/preprocessing/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -162,9 +152,9 @@
         <option value="$PROJECT_DIR$/preprocessing/GUI.py" />
         <option value="$PROJECT_DIR$/processing/__init__.py" />
         <option value="$PROJECT_DIR$/preprocessing/Report.txt" />
-        <option value="$PROJECT_DIR$/preprocessing/Main.py" />
         <option value="$PROJECT_DIR$/processing/processor.py" />
         <option value="$PROJECT_DIR$/preprocessing/BarRer.py" />
+        <option value="$PROJECT_DIR$/preprocessing/Main.py" />
       </list>
     </option>
   </component>
@@ -514,7 +504,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="733" extended-state="0" />
+    <frame x="-1" y="0" width="1368" height="733" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -851,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/preprocessing/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="327">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
