@@ -11,7 +11,7 @@ from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from cStringIO import StringIO
 from pdfminer.pdfparser import PDFSyntaxError
-from FilesConverter import odt_get_text
+#from FilesConverter import odt_get_text
 from Configuration_Files.config import Configurator
 
 
@@ -74,7 +74,8 @@ class Docxer:
                     print "Couldn't read PDF: " + filer
             elif "odt" in extension and Configurator.RUN_ODT:
                 try:
-                    to_write = str(odt_get_text(dirs + filer).encode('ascii', 'ignore'))
+                    print "Skipping: " + dirs + filer
+                    to_write = "N?A " #str(odt_get_text(dirs + filer).encode('ascii', 'ignore'))
                 except (IOError, Exception):
                     to_write = "N?A"
                     print "Couldn't read ODT: " + filer
