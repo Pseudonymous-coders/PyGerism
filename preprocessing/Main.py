@@ -104,8 +104,8 @@ def on_start_app(run_type):
     processor.process_essays()
     new_data = processor.main_scan(set_progress)
 
-    set_progress(100, "Loading graphs, Please wait...")
-    graph_all(new_data)
+    set_progress(100, "Report complete, check in the Examined folder where you uploaded essays")
+    #graph_all(new_data)
 
     '''
     print "Analyzer Started\n\n"
