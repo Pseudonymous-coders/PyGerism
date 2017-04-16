@@ -9,6 +9,8 @@ import java.util.concurrent.Executors;
  * Created by pseudonymous
  */
 public class EssayGroup {
+    private volatile List<Essay> parentEssays;
+    private volatile List<String> parentSentences;
     private volatile List<Essay> essays;
     private volatile List<Flags> allFlags;
     private long processing = 0;
@@ -20,6 +22,30 @@ public class EssayGroup {
     public EssayGroup() {
         this.essays = new ArrayList<>();
         this.allFlags = new ArrayList<>();
+        this.parentEssays = new ArrayList<>();
+        this.parentSentences = new ArrayList<>();
+    }
+
+    /**
+     * Add a sample parent essay to remove common sentences
+     *
+     * @param parentEssay Parent essay to extrapolate sentences
+     */
+    public void addParentEssay(Essay parentEssay) {
+        this.parentEssays.add(parentEssay);
+    }
+
+    /**
+     * Calculate all of the parent essays and extract sentences for further
+     * extrapolation of the children sentences
+     */
+    public void computeParents() {
+        for (Essay parent : this.parentEssays) {
+            if (!parent.hasComputedSentences()) {
+                parent.computeSentences();
+            }
+            this.parentSentences.addAll(parent.getSentences());
+        }
     }
 
     /**
@@ -50,6 +76,8 @@ public class EssayGroup {
             final Essay parent = this.essays.get(pInd);
             for (int cInd = (pInd + 1); cInd < this.essays.size(); cInd++) {
                 final Essay child = this.essays.get(cInd);
+                child.setParentSentences(this.parentSentences);
+                child.extrapolateSentences();
                 Runnable worker = () -> {
                     Flags flags = parent.compareTo(child);
                     if (!flags.isSameId()) { //The essays are the same

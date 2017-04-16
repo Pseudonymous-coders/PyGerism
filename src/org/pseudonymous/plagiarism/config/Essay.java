@@ -17,6 +17,8 @@ public class Essay {
     private List<String> sentences;
     private int uniqueID = 0;
     private boolean computedSentences = false;
+    private List<String> parentSentences;
+    private String[] endOfSentence = {".", "?", "!"};
 
     /**
      * Essay constructor
@@ -27,6 +29,7 @@ public class Essay {
         this.name = "";
         this.rawData = "";
         this.sentences = new ArrayList<>();
+        this.parentSentences = new ArrayList<>();
         this.uniqueID = uniqueID;
     }
 
@@ -87,6 +90,24 @@ public class Essay {
     }
 
     /**
+     * Get the current computed sentences state
+     *
+     * @return A boolean if the essay's sentences have been computed
+     */
+    public boolean hasComputedSentences() {
+        return this.computedSentences;
+    }
+
+    /**
+     * Set the parent sample essay sentences to remove common sentences
+     *
+     * @param parentSentences Parent essays (sentences) to extrapolate sentences
+     */
+    public void setParentSentences(List<String> parentSentences) {
+        this.parentSentences = parentSentences;
+    }
+
+    /**
      * Get the current essay uniqueId
      *
      * @return The current essay uniqueId
@@ -99,11 +120,24 @@ public class Essay {
      * Internal method to compute and create a list of sentences based on the set rawData
      */
     public void computeSentences() {
-        String rawData = this.getRawData();
+        String rawData = this.getRawData()
+                .replaceAll(" {2}", " ")
+                .replaceAll("\n{2}", "\n");
         String[] lines = rawData.split("\n");
         StringBuilder fixedLines = new StringBuilder();
         for (String line : lines) {
             if (line.length() < Configs.sentenceMinSize) continue;
+
+            //Add a period to every new line
+            boolean hasEof = false;
+            for (String eof : this.endOfSentence) {
+                if (line.endsWith(eof) || line.endsWith(eof + " ")) {
+                    hasEof = true;
+                    break;
+                }
+            }
+            if (!hasEof) line += ".";
+
             fixedLines.append(line);
         }
 
@@ -117,12 +151,28 @@ public class Essay {
 
         for (int end = iterator.next(); end != BreakIterator.DONE; start = end, end = iterator.next()) {
             String sentence = Processor.strip(rawData.substring(start, end));
+            sentence = Processor.removeUrls(sentence);
             if (sentence.length() >= Configs.sentenceMinSize && sentence.split(" ").length > Configs.sentenceMinWords) {
                 this.sentences.add(sentence);
             }
         }
 
         this.computedSentences = true;
+    }
+
+    /**
+     * Internal method to extrapolate all sentences that match the parents
+     */
+    public void extrapolateSentences() {
+        for (int pInd = 0; pInd < this.sentences.size(); pInd++) {
+            String currentSentence = this.sentences.get(pInd);
+            for (String parentSentence : this.parentSentences) {
+                if (Processor.ratioCalculator(currentSentence, parentSentence) > Configs.ratioParentMin) {
+                    this.sentences.remove(pInd);
+                    break;
+                }
+            }
+        }
     }
 
     /**
@@ -153,7 +203,7 @@ public class Essay {
         //Check for every sentence in the first essay with the second to see the ratio calculator
         for (int fInd = 0; fInd < fSentences.size(); fInd++) {
             final String fSent = fSentences.get(fInd);
-            for (int sInd = (fInd + 1); sInd < sSentences.size(); sInd++) {
+            for (int sInd = 0/*(fInd + 1)*/; sInd < sSentences.size(); sInd++) {
                 final String sSent = sSentences.get(sInd);
                 double ratio = Processor.ratioCalculator(fSent, sSent); //Check Processor to change method type
                 if (ratio > Configs.ratioMin) {

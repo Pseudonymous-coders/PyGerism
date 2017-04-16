@@ -1,26 +1,25 @@
 package org.pseudonymous.plagiarism.config;
 
-/**
- * Created by pseudonymous
- */
+import org.jetbrains.annotations.NotNull;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+/**
+ * Created by pseudonymous
+ */
 
 public class Logger {
 
     public static class TeePrintStream extends PrintStream {
 
-        private PrintStream system_out;
+        private PrintStream systemOut;
 
-        public TeePrintStream(OutputStream file, PrintStream second) throws FileNotFoundException {
+        TeePrintStream(OutputStream file, PrintStream second) throws FileNotFoundException {
             super(file);
-            system_out = second;
+            systemOut = second;
         }
 
         @Override
@@ -31,39 +30,64 @@ public class Logger {
         @Override
         public void flush() {
             super.flush();
-            system_out.flush();
+            systemOut.flush();
         }
 
         @Override
-        public void write(byte[] buf, int off, int len) {
+        public void write(@NotNull byte[] buf, int off, int len) {
             super.write(buf, off, len);
-            system_out.write(buf, off, len);
+            systemOut.write(buf, off, len);
         }
 
         @Override
         public void write(int b) {
             super.write(b);
-            system_out.write(b);
+            systemOut.write(b);
         }
 
         @Override
-        public void write(byte[] b) throws IOException {
+        public void write(@NotNull byte[] b) throws IOException {
             super.write(b);
-            system_out.write(b);
+            systemOut.write(b);
         }
-
     }
 
     private static DateFormat date_format;
-    private static final String log_tag = "PLAGIARISM";
+    private static final String logTag = "PLAGIARISM";
 
     public static void init() {
-        System.out.println("Starting the PlagiarismChecker Log");
+        System.out.println("Starting the PlagiarismChecker Logger");
 
         date_format = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
+
+        final DateFormat fileDateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm");
+        final String logFilePath = Configs.logLocation + fileDateFormat.format(new Date()) + Configs.logFile;
+        final File file = new File(logFilePath);
+        Logger.Log("Attempting to tee output stream to " + logFilePath);
+
+        //Create a new log file if it doesn't exist
+        if (!file.exists()) {
+            try {
+                //noinspection ResultOfMethodCallIgnored
+                file.createNewFile();
+            } catch (IOException err) {
+                err.printStackTrace();
+                Logger.Log("Failed creating a new log file");
+            }
+        }
+
+        try {
+            FileOutputStream teeOut = new FileOutputStream(file);
+            TeePrintStream teePrintStream = new TeePrintStream(teeOut, System.out);
+            System.setOut(teePrintStream);
+            System.setErr(teePrintStream);
+        } catch (IOException err) {
+            err.printStackTrace();
+            Logger.Log("Failed creating the file tee logger output stream!");
+        }
     }
 
-    public static String getDate() {
+    private static String getDate() {
         return date_format.format(new Date());
     }
 
@@ -76,7 +100,7 @@ public class Logger {
         sb.append("[");
         sb.append(getDate());
         sb.append("]|");
-        sb.append(log_tag);
+        sb.append(logTag);
         sb.append("|: ");
 
         if (error) {
@@ -87,5 +111,4 @@ public class Logger {
 
         System.out.println(sb.toString());
     }
-
 }

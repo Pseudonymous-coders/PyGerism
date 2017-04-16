@@ -6,8 +6,11 @@ import org.pseudonymous.plagiarism.config.Essay;
 import org.pseudonymous.plagiarism.config.EssayGroup;
 import org.pseudonymous.plagiarism.config.Logger;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by pseudonymous
@@ -96,7 +99,45 @@ public class Processor {
         return newString;
     }
 
+    /**
+     * Remove urls from strings
+     *
+     * @param commentstr The full string to detect a url in
+     * @return The newly parsed string that doesn't have the url
+     */
+    public static String removeUrls(String commentstr) {
+        String urlPattern = "((https?|ftp|gopher|telnet|file|Unsure|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";
+        Pattern p = Pattern.compile(urlPattern, Pattern.CASE_INSENSITIVE);
+        Matcher m = p.matcher(commentstr);
+        int i = 0;
+        while (m.find()) {
+            String newGroup = m.group(i)
+                    .replaceAll("\\(", "")
+                    .replaceAll("\\)", "")
+                    .replaceAll("\\&", "")
+                    .replaceAll("\\?", "");
+            commentstr = commentstr.replaceAll(newGroup, "").trim();
+            i++;
+        }
+        return commentstr;
+    }
+
+    public static String basename(String file) {
+        String basename;
+        try {
+            basename = file.split("\\.(?=[^\\.]+$)")[0];
+        } catch (Exception err) {
+            Logger.Log("Failed getting basename of file " + file, true);
+            basename = file.substring(0, file.length() - 4);
+        }
+        return basename;
+    }
+
     public static EssayGroup process(String folder) {
+        return process(folder, null);
+    }
+
+    public static EssayGroup process(String folder, String parentFolder) {
         EssayGroup essayGroup = new EssayGroup();
         try {
             if (!FileConverter.checkIfFolderExists(folder)) {
@@ -107,16 +148,37 @@ public class Processor {
                 for (Pair<String, String> filePair : fileList) {
                     if (filePair == null) {
                         Logger.Log("Not a valid file pair", true);
-                        return process(folder); //Rerun the entire process @TODO - FIX THIS WEIRD NULLPOINTER BUG
+                        return process(folder, parentFolder); //Rerun the entire process @TODO - FIX THIS WEIRD NULLPOINTER BUG
                     }
                     Logger.Log("Processed file " + filePair.getLeft());
                     Essay essay = new Essay(uniqueId);
-                    essay.setName(filePair.getLeft());
+                    essay.setName(basename(new File(filePair.getLeft()).getName()));
                     essay.setRawData(filePair.getRight());
                     essay.computeSentences();
 
                     essayGroup.addChild(essay);
                     uniqueId++;
+                }
+
+                if (parentFolder != null) {
+                    if (parentFolder.length() != 0) {
+                        Logger.Log("Processing parent folder " + parentFolder);
+                        fileList = FileConverter.processFolder(parentFolder);
+                        for (Pair<String, String> filePair : fileList) {
+                            if (filePair == null) {
+                                Logger.Log("Not a valid file pair", true);
+                                return process(folder, parentFolder); //Rerun the entire process @TODO - FIX THIS WEIRD NULLPOINTER BUG
+                            }
+                            Logger.Log("Processed parent file " + filePair.getLeft());
+                            Essay essay = new Essay(uniqueId);
+                            essay.setName(filePair.getLeft());
+                            essay.setRawData(filePair.getRight());
+                            essay.computeSentences();
+
+                            essayGroup.addParentEssay(essay);
+                            uniqueId++;
+                        }
+                    }
                 }
             }
         } catch (Throwable error) {
