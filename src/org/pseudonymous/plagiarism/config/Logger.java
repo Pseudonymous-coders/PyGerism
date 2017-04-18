@@ -52,15 +52,15 @@ public class Logger {
         }
     }
 
-    private static DateFormat date_format;
+    private static DateFormat dateFormat, fileDateFormat;
     private static final String logTag = "PLAGIARISM";
 
     public static void init() {
         System.out.println("Starting the PlagiarismChecker Logger");
 
-        date_format = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
+        dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
+        fileDateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm");
 
-        final DateFormat fileDateFormat = new SimpleDateFormat("yyyy-MM-dd HH-mm");
         final String logFilePath = Configs.logLocation + fileDateFormat.format(new Date()) + Configs.logFile;
         final File file = new File(logFilePath);
         Logger.Log("Attempting to tee output stream to " + logFilePath);
@@ -88,7 +88,11 @@ public class Logger {
     }
 
     private static String getDate() {
-        return date_format.format(new Date());
+        return dateFormat.format(new Date());
+    }
+
+    public static String getFileDate() {
+        return fileDateFormat.format(new Date());
     }
 
     public static void Log(String toLog) {

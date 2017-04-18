@@ -13,5 +13,6 @@
     <orderEntry type="library" name="commons-lang3-3.5" level="project" />
     <orderEntry type="library" name="plexus-utils-3.0.24" level="project" />
     <orderEntry type="library" name="java-string-similarity-0.23" level="project" />
+    <orderEntry type="library" name="json-20160810" level="project" />
   </component>
 </module>

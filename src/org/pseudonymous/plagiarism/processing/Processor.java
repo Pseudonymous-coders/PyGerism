@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static org.pseudonymous.plagiarism.Main.gui;
+
 /**
  * Created by pseudonymous
  */
@@ -155,6 +157,8 @@ public class Processor {
                     essay.setName(basename(new File(filePair.getLeft()).getName()));
                     essay.setRawData(filePair.getRight());
                     essay.computeSentences();
+
+                    gui.setProgressBarText("Cleaning document" + essay.getName());
 
                     essayGroup.addChild(essay);
                     uniqueId++;

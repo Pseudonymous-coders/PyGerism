@@ -120,6 +120,24 @@ public class EssayGroup {
     }
 
     /**
+     * Get the the total amount of essays processing
+     *
+     * @return The number of essays processing
+     */
+    public long getProcessing() {
+        return this.processing;
+    }
+
+    /**
+     * Get the current count of essays processed
+     *
+     * @return The number of currently processed essays
+     */
+    public long getProcessed() {
+        return this.processed;
+    }
+
+    /**
      * Get the current progress of the processing
      *
      * @return The percentage (0 - 100) of the current progress
