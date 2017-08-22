@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/pyScape.iml" filepath="$PROJECT_DIR$/.idea/pyScape.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/PlagiarismChecker.iml" filepath="$PROJECT_DIR$/PlagiarismChecker.iml" />
+>>>>>>> plagerism/master
     </modules>
   </component>
 </project>
